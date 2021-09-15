@@ -1,0 +1,1 @@
+Essa vai ser uma plataforma códgo aberto Para desenvolvedores e Criadores de conteúdo
