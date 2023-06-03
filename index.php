@@ -2,39 +2,38 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
-$route = new \CoffeeCode\Router\Router(ROOT);
+$router = new \CoffeeCode\Router\Router(ROOT);
 
 /**
  * APP
  */
-$route->namespace("Source\App");
+$router->namespace("Source\Controllers");
 
 /**
  * web
  */
-$route->group(null);
-$route->get("/", "Web:home");
-$route->get("/contato", "Web:contact");
-$route->get("/sobre", "Web:about");
-$route->get("/texto", "Web:text");
-$route->get("/dicas_conhecimento", "Web:tips_knowledge");
-$route->get("/palheta_de_cores", "Web:color_palette");
-
+$router->group(null);
+$router->get("/", "WebController:home");
+$router->get("/", "WebController:home");
+$router->get("/contato", "WebController:contact");
+$router->get("/sobre", "WebController:about");
+$router->get("/texto", "WebController:text");
+$router->get("/dicas_conhecimento", "WebController:tips_knowledge");
+$router->get("/palheta_de_cores", "WebController:color_palette");
+$router->get("/gerador_de_conteudo", "WebController:contentGenerator");
 
 
 /**
  * ERROR
  */
-$route->group("ops");
-$route->get("/{errcode}", "Web:error");
+$router->group("ops");
+$router->get("/{errcode}", "WebController:error");
 
 /**
  * PROCESS
  */
-$route->dispatch();
+$router->dispatch();
 
-if ($route->error()) {
-    $route->redirect("/ops/{$route->error()}");
+if ($router->error()) {
+    $router->redirect("/ops/{$router->error()}");
 }
-
-//Parei em 16:29

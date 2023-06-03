@@ -50,3 +50,8 @@
 		<button type='button' id='botaoPrimeiraLetraMaiuscula' class='form-control btn btn-lg btn-outline-dark'>Primeira Letra de Cada Palavra Maiúscula</button>
 	</article>
 </section>
+<?= $v->start("js"); ?>
+	<script src="<?= url('theme/assets/js/contadorDeCaracteres.js');?>"></script>
+	<script src="<?= url('theme/assets/js/Encriptador.js');?>"></script>
+	<script src="<?= url('theme/assets/js/conversorDeTextos.js');?>"></script>
+<?= $v->end(); ?>

@@ -1,7 +1,7 @@
 <?php $v->layout("_theme"); ?>
 <div class='error'>
 	<h2>Ooooops erro <?= $error; ?>!</h2>
-	<p>Houve algum problema na exibição desta página!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 </div>
 
 <?php $v->start("slidebar"); ?>

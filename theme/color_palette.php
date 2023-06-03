@@ -20,3 +20,7 @@
 		<p>No Momentos Apenas Cores RGB (), Em Breve Disponibilizaremos Mais Cores e Códigos CSS, Hexadecimal, HEX, RGB (), HSL (), HSV (), HWB (), CMYK (), Vamos Aprimorar Tudo Logo Logo!</p>
 	</div>
 </section>
+
+<?= $v->start("js"); ?>
+	<script src="<?= url('theme/assets/js/paletadecorescodigos.js');?>"></script>
+<?= $v->end(); ?>

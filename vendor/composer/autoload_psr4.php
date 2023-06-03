@@ -7,8 +7,13 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Source\\' => array($baseDir . '/source'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
+    'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
+    'League\\Csv\\' => array($vendorDir . '/league/csv/src'),
     'CoffeeCode\\Router\\' => array($vendorDir . '/coffeecode/router/src'),
+    'CoffeeCode\\Paginator\\' => array($vendorDir . '/coffeecode/paginator/src'),
     'CoffeeCode\\Optimizer\\' => array($vendorDir . '/coffeecode/optimizer/src'),
     'CoffeeCode\\DataLayer\\' => array($vendorDir . '/coffeecode/datalayer/src'),
 );

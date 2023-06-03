@@ -107,14 +107,20 @@
 	<div class="col-5 text-center">
 		<a target="_blank" href="https://receitasedrinks.com/">
 			<h4 class="my-3 text-dark h2 text-center">Receitas e Drinks</h4>
-			<img alt="logo do site Receitas e Drinks" src="theme/img/logo_receitas_e_drinks.png" class="form-control p-0 border shadow-lg rounded my-3">
+			<img alt="logo do site Receitas e Drinks" src="theme/assets/img/logo_receitas_e_drinks.png" class="form-control p-0 border shadow-lg rounded my-3">
 		</a>
 	</div>
 	<div class="col-5 text-center">
 		<a target="_blank" href="https://recicladarte.com/">
 			<h4 class="my-3 text-dark h2 text-center">Site RecicladArte</h4>
-			<img alt="logo do site logo RecicladArte" src="theme/img/logo_recicladarte.jpg" class="form-control p-0 border shadow-lg rounded my-3">
+			<img alt="logo do site logo RecicladArte" src="theme/assets/img/logo_recicladarte.jpg" class="form-control p-0 border shadow-lg rounded my-3">
 		</a>
 	</div>
 	<div class="col-1">&nbsp;</div>
 </section>
+
+<?= $v->start("js"); ?>
+	<script src="<?= url('theme/assets/js/bancoDeTextosAleatorios.js'); ?>"></script>
+	<script src="<?= url('theme/assets/js/geradorDeTextoAleatorio.js'); ?>"></script>
+	<script src="<?= url('theme/assets/js/visualizador_de_border_radius.js'); ?>"></script>	
+<?= $v->end(); ?>

@@ -21,10 +21,10 @@
 </section>
 <section class='row border shadow-lg my-3'>
 	<div class='col-6'>
-		<img alt='Site Receitas e Drinks' src='theme/img/logo_receitas_e_drinks.png' class='form-control p-3' />
+		<img alt='Site Receitas e Drinks' src='theme/assets/img/logo_receitas_e_drinks.png' class='form-control p-3' />
 	</div>
 	<div class='col-6'>
-		<img alt='Site RecicladArte' src='theme/img/logo_recicladarte.jpg' class='form-control p-3' />
+		<img alt='Site RecicladArte' src='theme/assets/img/logo_recicladarte.jpg' class='form-control p-3' />
 	</div>
 </section>
 <section class='row border shadow-lg my-3'>
