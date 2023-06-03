@@ -1,0 +1,157 @@
+* {
+    font-family: "Helvetica", sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main_nav {
+    padding: 20px;
+    text-align: center;
+    background: #2c3e50;
+}
+
+.main_nav a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.main_nav a:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.ocultar{
+    display: none;
+}
+
+/*Página Paleta De Cores Codigos*/
+    #PalhetadeCores{
+        background-color: rgba(255, 0, 0, 0.6);
+        border:6px double lime;
+        color: lime;
+    }
+    .PiscaPisca{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(255,255,255);
+        animation-name: colorchange;
+        animation-duration: 11s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        border:6px double lime;  
+        border-radius: 9px;  
+    }
+    @keyframes colorchange{
+        0%{ background-color: #f4e749; border-color: #60bbf4; }
+        10%{ background-color: #60bbf4; border-color: #f4e749; }
+        20%{ background-color: #e5903a; border-color: #7d42dd; }
+        30%{ background-color: #7d42dd; border-color: #e5903a; }
+        40%{ background-color: #e5903a; border-color: #a58828; }
+        50%{ background-color: #a58828; border-color: #bc3bbc; }
+        60%{ background-color: #bc3bbc; border-color: #164a16; }
+        70%{ background-color: #164a16; border-color: #d94646; }
+        80%{ background-color: #d94646; border-color: #b96c52; }
+        90%{ background-color: #b96c52; border-color: #bcef32; }
+        100%{ background-color: #bcef32; border-color: #b96c52; }
+    }
+    #escolhas button {
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    #escolhas button:hover {
+        cursor: pointer;
+        border: 1px solid black;
+    }
+
+    #visualizar{
+        width: 100%;
+        height: 100px;      
+        border:6px double lime;
+        border-radius: 9px;
+    }   
+/*---*/
+
+/*Anuncios*/
+    .menuDeAnuncios {       
+        overflow: auto;
+        white-space: nowrap;
+        padding: 0px;           
+        text-align: center;
+    }
+    .menuDeAnuncios section {
+        background-color: green;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding-top: 6px;
+        text-decoration: none;
+        border: 6px double lime;
+        border-radius: 9px;
+        height: 123px;
+        min-width: 190px !important;        
+    }
+    .menuDeAnunciosDois section{
+        height: 266px;
+    }
+    .menuDeAnuncios section:hover {
+        background-color: lime;
+        color: #4B0082;
+        font-weight: bold;
+        border-color: green;
+    }
+    /* width */
+    .menuDeAnuncios::-webkit-scrollbar {
+      width: 30px;
+      height: 16px;
+    }
+    /* Track */
+    .menuDeAnuncios::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+    /* Handle */
+    .menuDeAnuncios::-webkit-scrollbar-thumb{
+      background: gray; 
+      border-radius: 10px;
+    }
+    /* Handle on hover */
+    .menuDeAnuncios::-webkit-scrollbar-thumb:hover {
+      background: lime;       
+    }
+/*---*/
+/*--Linha aviso de cookies--*/
+#linhaAvisoDeCookies{
+    width: 100%;
+    position: fixed;
+    top:70% !important;    
+    background-color: lightgray;
+    text-align: center;
+    color: midnightblue;
+    font-size: 20px;
+    border:6px double midnightblue;
+    border-radius: 6px;
+}
+#linhaAvisoDeCookies button{
+    width: 90px;
+    border-radius: 10px;
+    border:6px double midnightblue;
+    background-color: DarkRed;
+    color: lime;
+}
+#linhaAvisoDeCookies button:hover{
+    background-color: lightgray;
+    color: DarkRed;
+}
+li{
+    list-style-type: none;
+}

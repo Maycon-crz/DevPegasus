@@ -1,0 +1,28 @@
+{
+  "name": "devpegasus/my-php-project",
+  "description": "Site de Ferramentas Dev",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maycon Nascimento de Oliveira",
+      "email": "nmaycon304@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+    "php": "^7.3",
+    "ext-pdo": "*",
+    "coffeecode/datalayer": "1.1.*",
+    "coffeecode/router": "1.0.*",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/optimizer": "2.0.*"
+  }
+}

@@ -1,0 +1,31 @@
+class BancoDeTextosAleatorios{
+	constructor(bancoDeTemas, listaReciclagem, listaProgramacao){
+		this.textosProgramacao();
+		this.textosReciclagem();
+		this.temas();
+	}
+	textosProgramacao(){
+		this.listaProgramacao = {
+			1: "Eleve o recife: a IA ajuda a restaurar o recife de coral A Accenture se uniu a parceiros de tecnologia e indústria para desenvolver uma solução inovadora para restaurar os recifes. Os recifes de coral estão entre os recursos naturais mais preciosos e precários do planeta. Esses diversos ecossistemas - que abrigam um quarto de toda a vida marinha global - protegem as costas das tempestades tropicais, fornecem alimentos e renda para 100 milhões de pessoas e produzem US $ 36 bilhões em valor econômico anualmente. Mas os recifes estão em perigo: ameaçados por tudo, desde métodos de pesca destrutivos até o aquecimento das temperaturas e o desenvolvimento costeiro insustentável. A restauração de recifes depende primeiro de uma avaliação precisa de sua saúde geral, mas os esforços de monitoramento tradicionais são demorados e não confiáveis, muitas vezes produzindo resultados imprecisos. Tinha que haver uma maneira mais inteligente. Fonte: https://www.accenture.com/us-en/case-studies/applied-intelligence/ai-helps-power-coral-reef-restoration",
+			2: "A Accenture se uniu a parceiros de tecnologia e indústria e uma fundação de conservação de corais em El Nido, Filipinas, para desenvolver uma solução inovadora para restaurar os recifes. Projeto: nasceu o CORaiL, um sistema movido por inteligência artificial para monitorar populações de peixes, e o sistema foi implantado em um recife nas Filipinas em 2019. No centro do empreendimento está uma solução de computação de ponta econômica que observa, classifica e mede a vida marinha. Câmeras inteligentes estrategicamente posicionadas, instaladas debaixo d'água e equipadas com a plataforma de serviços de análise de vídeo Accenture (VASP) e hardware Intel, permitem observações não invasivas. As câmeras detectam e fotografam a vida marinha e algoritmos de aprendizado profundo são aplicados para contar e classificar os peixes. Fonte: https://www.accenture.com/us-en/case-studies/applied-intelligence/ai-helps-power-coral-reef-restoration",
+			3: "'Eu sempre escolho uma pessoa preguiçosa para fazer uma tarefa difícil, porque ela irá encontrar uma forma fácil de resolver.' A frase acima é atribuída ao Bill Gates. Tudo indica que ele não disse isso, realmente, mas é uma ótima frase e resume muito bem uma característica muito desejável para programadores. Programação é um processo criativo, não é apenas um processo repetitivo onde fazemos coisas que já foram feitas. Se fosse um processo repetitivo, apenas, já teríamos sido substituídos por robôs (por enquanto eles estão sentados no banco do copiloto, né GitHub? Fonte: https://www.uol.com.br/tilt/colunas/andre-noel/2021/07/17/precisamos-de-mais-programadores-preguicosos.htm?cmpid=copiaecola",
+			4: "O dono da Jetflix condenado em 2019 teve julgamento marcado para março de 2020. A sessão, contudo, foi adiada devido à pandemia do novo coronavírus. O processo foi resumido no mês passado; Villarino preferiu admitir o crime, fugindo de uma pena maior do júri. Darryl Julios Polo, ou djppimp, dono do iStreamItAll, outro grande domínio de IPTV pirata, confessou pelos crimes de conspiração por violação de direitos autorais e por lavagem de dinheiro – ele ajudou na operação do Jetflix e fundou o iStreamItAll – e foi sentenciado a quase 5 anos de prisão no mês passado. Fonte: https://tecnoblog.net/453051/programador-de-netflix-pirata-e-condenado-a-prisao-por-violar-copyright/",
+			qtd: 4
+		}
+	}
+	textosReciclagem(){
+		this.listaReciclagem = {
+			1: "Tijolo ecológico é um modelo de tijolo feito a partir da mistura da água com solo ou outros resíduos naturais e recicláveis que não passa pelo processo de queima, o que reduz a emissão de gases poluentes na atmosfera. Trata-se de um dos materiais mais usados quando falamos de arquitetura sustentável. Para se ter uma ideia da sua eficácia na preservação do meio ambiente, de acordo com a ANITECO (Associação Nacional da Indústria do Tijolo Ecológico) a produção de 1.000 tijolos ecológicos economiza de 7 à 12 árvores de médio porte, quando comparado ao bloco cerâmico. Por isso, é essencial que arquitetos saibam qual é a composição do material e quando ele pode ser aplicado em uma obra. - Fonte: https://recicladarte.com/ - Publicação original: https://www.vivadecora.com.br/pro/arquitetura/tijolo-ecologico/",
+			2: "De acordo com o Instituto Brasileiro do PVC, a durabilidade média é de 60 anos, podendo chegar a 100 anos de uso se o produto for limpo e conservado de maneira adequada, é muito resistente à ignição, ou seja, ele dificulta o início e a propagação de um incêndio. Essa característica torna o PVC um dos materiais mais utilizados em aplicações de risco elevado, como fios e cabos e forros de postos de gasolina, por exemplo. Os tubos branco Palha, geralmente são utilizados no sistema de esgoto, já os tubos de cor marrom geralmente são utilizados em instalações permanentes e embutidas, conduzindo água fria em residências, indústrias e comércios. Fonte: https://recicladarte.com/ - Publicação Original: www.krona.com.br",
+			3: "O carbono gerado pelas embalagens dos produtos é um tema Importante em todos os setores de produção de cosméticos, na moda, eletrodomésticos e alimentos. Porém sim, é possível manter a embalagem atraente e sustentável, Sem perder o estilo do produto, Os consumidores estão cada vez mais preocupados com o impacto que estão causando no meio ambiente. Muitos consumidores estão utilizando sacolas de compras reutilizáveis ​​em mercados e feiras. Estes mesmos consumidores preferem saco de papel do que sacolas plásticas. Um exemplo bem recente, diz respeito a campanhas de conscientização para evitar o uso de canudos de plástico em restaurantes e fast foods. Campanhas como o movimento “sem canudo por favor” e a hashtag #semcanudo são comuns nas redes sociais. Fonte: https://recicladarte.com/",
+			qtd: 3
+		}
+	}
+	temas(){
+		this.bancoDeTemas = {
+			1: "Reciclagem",
+			2: "Programação",
+			qtd:2
+		}
+	}
+}
