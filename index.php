@@ -7,7 +7,7 @@ $router = new \CoffeeCode\Router\Router(ROOT);
 /**
  * APP
  */
-$router->namespace("Source\Controllers");
+$router->namespace("source\Controllers");
 
 /**
  * web
@@ -20,9 +20,11 @@ $router->get("/sobre", "WebController:about");
 $router->get("/texto", "WebController:text");
 $router->get("/dicas_conhecimento", "WebController:tips_knowledge");
 $router->get("/palheta_de_cores", "WebController:color_palette");
-$router->get("/gerador_de_conteudo", "WebController:contentGenerator");
 
 
+$router->group("luana");
+$router->get("/", "AdministratorController:luanaIA");
+$router->post("/api/{section}", "AdministratorController:luanaAPI");
 /**
  * ERROR
  */

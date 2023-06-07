@@ -98,7 +98,6 @@ class WebController{
 			url("gerador_de_conteudo"),
 			"https://via.placeholder.com/1200x628.png?text=Sobre+RecicladArte"
 		);
-
 		echo $this->view->render("content_generator", [
 			"head" => $head,
 		]);

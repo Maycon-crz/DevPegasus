@@ -36,7 +36,7 @@
 					<a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url() ?>">Home</a>
           <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("sobre"); ?>">Sobre</a>
 					<a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("contato"); ?>">Contato</a>
-          <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("gerador_de_conteudo"); ?>">Entrar</a>
+          <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("luana"); ?>">Entrar</a>
 				</div>
 			</div>
 		<?php
@@ -88,11 +88,12 @@
 	<footer class="container-flex text-center border mt-5">		
 		Todos os Direitos Reservados - <?= SITE; ?> - 2021
 	</footer>
-<script src="theme/assets/js/arquivo.js"></script>
-<!-- Javascrip bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<!-- jquery -->
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<?= $v->section("js"); ?>
+  <form><input type="hidden" name="urlSite" id="urlSite" value="<?= url() ?>"></form>
+  <script src="theme/assets/js/arquivo.js"></script>
+  <!-- Javascrip bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <?= $v->section("js"); ?>
 </body>
 </html>

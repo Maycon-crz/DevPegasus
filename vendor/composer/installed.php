@@ -5,8 +5,8 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd62f8702f267ba61ce4132f917a9464e2b441f28',
-        'name' => 'mayconnascimentodeoliveira/recicladarte5',
+        'reference' => '87fac0aa3b9baac2ee616048e9f816aa410b72fb',
+        'name' => 'mayconnascimentodeoliveira/devpegasus',
         'dev' => true,
     ),
     'versions' => array(
@@ -64,13 +64,13 @@
             'reference' => 'f53f4c1fa4bf307d0f3858a348172ff4faf7669a',
             'dev_requirement' => false,
         ),
-        'mayconnascimentodeoliveira/recicladarte5' => array(
+        'mayconnascimentodeoliveira/devpegasus' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd62f8702f267ba61ce4132f917a9464e2b441f28',
+            'reference' => '87fac0aa3b9baac2ee616048e9f816aa410b72fb',
             'dev_requirement' => false,
         ),
         'monolog/monolog' => array(
