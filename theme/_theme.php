@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<?= $head; ?>
+  <!-- Lomadee -->
+  <meta name="lomadee-verification" content="23025592" />
   <!-- Google Search Console -->
   <meta name="google-site-verification" content="l92humeQRIVEtnv5actJx6u5mAiX9iMGiAvdmUaQq0w" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -36,7 +38,7 @@
 					<a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url() ?>">Home</a>
           <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("sobre"); ?>">Sobre</a>
 					<a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("contato"); ?>">Contato</a>
-          <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("luana"); ?>">Entrar</a>
+          <!-- <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("luana"); ?>">Entrar</a> -->
 				</div>
 			</div>
 		<?php

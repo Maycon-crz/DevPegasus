@@ -24,18 +24,17 @@
 			<h3 class="text-center">Resultados API ( seo-api.p.rapidapi.com/v1/search )</h3>
 			<div id="lineReturnedTitlesApiSEOrapidapi" class="row"></div>
 		</div>		
-	</div>
-	<div class="row border">
-		<div class="col-12 border rounded mt-3 mb-3">
-			<h3 class="text-center">Resultados API ( textcortex.com/api )</h3>
-			<div id="lineReturnedTitlesApiSEOrapidapi" class="row"></div>
-		</div>		
-	</div>
+	</div>	
 	<div class="row border">
 		<div class="col-12 border rounded mt-3 mb-3">
 			<button type="button" class="btNlpcloud">API Nlpcloud</button>
 			<button type="button" class="btOpenaiGPTRapidapi">API OpenaiGPT Pela Rapidapi</button>			
 		</div>
 	</div>
-	
+	<!-- <div class="row border">
+		<div class="col-12 border rounded mt-3 mb-3">
+			<h3 class="text-center">Resultados API ( textcortex.com/api )</h3>
+			<div id="lineReturnedTitlesApiSEOrapidapi" class="row"></div>
+		</div>		
+	</div> -->
 </section>
