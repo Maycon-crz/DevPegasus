@@ -21,10 +21,25 @@ $router->get("/texto", "WebController:text");
 $router->get("/dicas_conhecimento", "WebController:tips_knowledge");
 $router->get("/palheta_de_cores", "WebController:color_palette");
 
+$router->get("/login", "AuthenticationController:loginPageController");
+$router->get("/user", "UserController:dashboard");
 
+/**
+ * LUANA IA
+ */
 $router->group("luana");
 $router->get("/", "AdministratorController:luanaIA");
-$router->post("/api/{section}", "AdministratorController:luanaAPI");
+// $router->post("/api/{section}", "AdministratorController:luanaAPI");
+
+/**
+ * API
+ */
+$router->group("/api");
+$router->post("/createsession", "AuthenticationController:createSession");
+$router->post("/login", "AuthenticationController:loginController");
+$router->post("/logout", "AuthenticationController:logoutController");
+
+
 /**
  * ERROR
  */

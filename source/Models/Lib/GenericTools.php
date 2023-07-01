@@ -1,8 +1,6 @@
 <?php
     namespace Source\Models\Lib;
     
-    use Source\Models\Lib\Conn;
-    
     use \PDO;
     use PDOException;
     
@@ -10,19 +8,23 @@
     use Exception;
     use InvalidArgumentException;
     
-	class GenericTools{
-	    // private static $con;
-		// private $response = array();
-		// private $result;
-	    public function __construct(){
-	        // self::$con = (new Conn())->getConn();
-	    }
-	    public function filtrando($dados){
-			if($dados != null){
-				$dados = trim($dados);
-				$dados = htmlspecialchars($dados);
-				$dados = addslashes($dados);
-			}			
+	class GenericTools {
+	    public function filter($dados){
+			$dados = trim($dados);
+			$dados = htmlspecialchars($dados);			
+			$dados = addslashes($dados);
 			return $dados;
-		}    	
+		}
+		public function checksImageTypeSize($image){
+			$nameImage = $image['name'] ?? "";
+			$sizeImage = $image['size'] ?? 0;
+			$permittedFormats = array("png", "PNG", "jpeg", "JPEG", "jpg", "JPG", "gif", "bmp", "webp");
+			$extension = pathinfo($nameImage, PATHINFO_EXTENSION);
+			if(in_array($extension, $permittedFormats)){
+				if(1024*1024*100 < $sizeImage){
+					return "Imagem muito grande!";
+				}else{ return 1; }
+			}else{ return "Arquivo não é uma imagem"; }
+		}
 	}
+?>

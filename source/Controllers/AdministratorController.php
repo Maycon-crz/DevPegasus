@@ -4,9 +4,9 @@ namespace Source\Controllers;
 
 use League\Plates\Engine;
 use CoffeeCode\Optimizer\Optimizer;
-use Source\Models\Authentication\Auth;
+use Source\Models\Authentication\Services\AuthBO;
 use Source\Models\Lib\GenericTools;
-use Source\Controllers\Middleware\MiddlewareAccess;
+use Source\Controllers\Middlewares\MiddlewareAccess;
 use Source\Support\Seo;
 use Source\Models\UserOptions\Administrator\ContentGeneratorModel;
 
@@ -17,7 +17,7 @@ class AdministratorController extends MiddlewareAccess{
 	private $seo;
 	private $response = array();
 	private $genericTools;
-	private $auth;
+	private $authBO;
 	private $pageAccessLevel = 3;
 	private $isRoute;
 	private $subject;
@@ -27,12 +27,12 @@ class AdministratorController extends MiddlewareAccess{
 		$this->view = Engine::create(__DIR__."/../../theme", "php");
 		$this->view->addData(["router" => $router]);
 		$this->seo = new Seo();
-		$this->auth = new Auth();
+		$this->authBO = new AuthBO();
 		$this->genericTools = new GenericTools();
 		$this->contentGeneratorModel = new ContentGeneratorModel();
 	}
 	public function luanaIA($data): void{
-        // $this->middleware($this->pageAccessLevel, $this->genericTools, $this->view, $this->auth, false);
+        $this->middleware($this->pageAccessLevel, $this->genericTools, $this->view, $this->authBO, false);
 		$head = $this->seo->render(
 			"Luana IA | ".SITE,
 			"Inteligência artificial Luana",
@@ -45,20 +45,12 @@ class AdministratorController extends MiddlewareAccess{
 		]);
 	}
 	public function luanaAPI($data){
-		$this->middleware($this->pageAccessLevel, $this->genericTools, $this->view, $this->auth, false);
+		$this->middleware($this->pageAccessLevel, $this->genericTools, $this->view, $this->authBO, false);
 		/*QUANDO por login descomentar 2 nível de acesso no middleware*/
 		switch($data["section"]){
-			case "title_generator_openai_gpt_rapidapi":
-				/*
-				Dados de acesso:
-				app_key=xZy6U/ttRcevPu9bwHqOy3j0se+sj3KONu/bEMgL5IlXT3f/i9Q7kEX5IDj22nNIoKX+1+mQF0dyCYKA8v5SjoDKnkG1d8pLa7YUx7NKeJXMVaoVdUjNFeRIbSHeLlIdiw/8jQj2tvQ1de59yYZ8W44RdtKt7P9JVgFqqrQPzy/K2RD9UhtTpz7JLhw6mxENHQcW/2TcbNJkg9w6IV3HMyLz8aozgzCMhnlqSWbjttsqUOisDV38CANveNkKRjjxNqLRfhlDdYn0cOU26xXv1w==
-				system=external
-				hierarchy=3
-				subject=Sustentabilidade
-				keywords=Reciclagem, Meio ambiente
-				*/
-				$this->subject = isset($_POST["subject"]) ? $this->genericTools->filtrando($_POST["subject"]) : "";
-				$this->keywords = isset($_POST["keywords"]) ? $this->genericTools->filtrando($_POST["keywords"]) : "";				
+			case "title_generator_openai_gpt_rapidapi":				
+				$this->subject = isset($_POST["subject"]) ? $this->genericTools->filter($_POST["subject"]) : "";
+				$this->keywords = isset($_POST["keywords"]) ? $this->genericTools->filter($_POST["keywords"]) : "";				
 				if($this->subject != "" && $this->keywords != ""){
 					$this->response = $this->contentGeneratorModel->titleGeneratorOpenaiGPTRapidapi($this->subject, $this->keywords);
 				}else{

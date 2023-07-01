@@ -1,14 +1,14 @@
 <?php
 
-namespace Source\Models\Authentication;
+namespace Source\Models\Authentication\Services;
 
-class Auth{
+class AuthBO{
     private static $key;
     private static $externalAppKey;
-    public function __construct(){		
-		self::$key = "eVnsL5I/9qLgUkakIKlajqWjLVgEu+oTUq2wpBDOvSOLHBAKFY8l81CLYazDqegRqIyQrEqnGCgCD/CrpHRaDNFR6RjBmEOiHh1JObbTj0L2LyEtOczvCBI1a8MKhG4CtfE5nN/ZF8Weaa5/0Ds1bC2hU0HmktTHI59RaIrHpA34tHD5Q2v3mVtulMmEF24C6YGkNw1vgTqi/B8QzufbNm1Jq1fFDaWvPpOMHM7hvx0=";
-        self::$externalAppKey = "xZy6U/ttRcevPu9bwHqOy3j0se sj3KONu/bEMgL5IlXT3f/i9Q7kEX5IDj22nNIoKX 1 mQF0dyCYKA8v5SjoDKnkG1d8pLa7YUx7NKeJXMVaoVdUjNFeRIbSHeLlIdiw/8jQj2tvQ1de59yYZ8W44RdtKt7P9JVgFqqrQPzy/K2RD9UhtTpz7JLhw6mxENHQcW/2TcbNJkg9w6IV3HMyLz8aozgzCMhnlqSWbjttsqUOisDV38CANveNkKRjjxNqLRfhlDdYn0cOU26xXv1w==";
-	}    
+    public function __construct(){
+		self::$key = "chave_de_api";
+        self::$externalAppKey = "chave_externa_de_api";
+	}
     public function generateAppKey() : array{
         /*Caso o acesso da API for pelo site*/
         session_start();
@@ -21,10 +21,14 @@ class Auth{
         return self::$externalAppKey;
     }
     public function getGenerateToken(string $email){
+        $payloadParameter = [			    
+            'name' => 'Nome do usuario',
+            'email' => $email,
+        ];
         /*Retorna o Token gerado*/
-        return $this->generateToken($email);
+        return $this->generateToken($payloadParameter);
     }
-    private function generateToken($email){
+    private function generateToken($payloadParameter){
         /*E-mail usado na geração da chave externa: nmaycon304@gmail.com*/
         /*Header Token*/
         $header = [
@@ -33,10 +37,7 @@ class Auth{
         ];
 
         /*Payload - Content*/
-        $payload = [			    
-            'name' => 'Maycon Nascimento de Oliveira DevPegasus',
-            'email' => $email,
-        ];
+        $payload = $payloadParameter;
 
         /*JSON*/
         $header = json_encode($header);

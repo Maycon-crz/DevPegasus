@@ -83,7 +83,8 @@
   </div>
 	<main class="container my-3">
 		<?= $v->section("content"); ?>
-	</main>  
+	</main>
+  <div class="loadingGif"></div>
   <section id='linhaAvisoDeCookies'>
     <p>Navegando em Nosso Site você Automaticamente Concorda com a Utilização de cookies para oferecer uma melhor experiência de navegação, <a href='politica_privacidade.php'>Saiba mais.</a> <button tipe='button' id='botaoFecharCookies'>X</button></p>
   </section>
@@ -96,6 +97,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="<?= url('theme/assets/js/authentication/session.js'); ?>"></script>
+	<?php if (!isset($_SESSION["token"]) || $_SESSION["token"] === false) : ?>	
+		<?php include "theme/include/modalLogin.php"; ?>
+		<script src="<?= url('theme/assets/js/authentication/login.js'); ?>"></script>
+		<script src="<?= url('theme/assets/js/authentication/userRegistration.js'); ?>"></script>		
+	<?php else: ?>
+		<script src="<?= url('theme/assets/js/authentication/logOut.js'); ?>"></script>
+	<?php endif; ?>
   <?= $v->section("js"); ?>
 </body>
 </html>

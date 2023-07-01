@@ -5,7 +5,6 @@ namespace Source\Controllers;
 use League\Plates\Engine;
 use CoffeeCode\Optimizer\Optimizer;
 use Source\Support\Seo;
-use Source\Models\User;
 
 class WebController{
 	/*@var Engine*/
@@ -24,7 +23,7 @@ class WebController{
 			"Ferramentas Grátis para Desenvolvedores, Web Designers, Criadores de Conteúdo e Programadores.",			
 			url(),
 			/*TODO: Alterar essa URL!*/
-			"https://www.recicladarte.com/theme/img/logo_recicladarte_marketing.jpg"
+			"https://via.placeholder.com/1200x628.png?text=Contato+DevPegasus"
 		);
 		echo $this->view->render("home", [
 			"head" => $head
@@ -36,7 +35,7 @@ class WebController{
 			"Contato | ".SITE,
 			"Entre em contato com a DevPegasus",
 			url("contato"),
-			"https://via.placeholder.com/1200x628.png?text=Contato+Recicladarte"
+			"https://via.placeholder.com/1200x628.png?text=Contato+DevPegasus"
 		);
 
 		echo $this->view->render("contact", [
@@ -48,7 +47,7 @@ class WebController{
 			"Sobre | ".SITE,
 			"Sobre a plataforma DevPegasus",
 			url("sobre"),
-			"https://via.placeholder.com/1200x628.png?text=Sobre+RecicladArte"
+			"https://via.placeholder.com/1200x628.png?text=Sobre+DevPegasus"
 		);
 
 		echo $this->view->render("about", [
@@ -60,7 +59,7 @@ class WebController{
 			"Ferramentas de Texto | ".SITE,
 			"Ferramentas para Converter Textos, Contar Caracteres, ENCriptador.",
 			url("texto"),
-			"https://via.placeholder.com/1200x628.png?text=Sobre+RecicladArte"
+			"https://via.placeholder.com/1200x628.png?text=Sobre+DevPegasus"
 		);
 
 		echo $this->view->render("text", [
@@ -72,7 +71,7 @@ class WebController{
 			"Dicas e Conhecimento | ".SITE,
 			"Dicas para encontrar Ferramentas Gratuitas online e offline.",
 			url("tips_knowledge"),
-			"https://via.placeholder.com/1200x628.png?text=Sobre+RecicladArte"
+			"https://via.placeholder.com/1200x628.png?text=Sobre+DevPegasus"
 		);
 
 		echo $this->view->render("tips_knowledge", [
@@ -84,7 +83,7 @@ class WebController{
 			"Palheta de Cores | ".SITE,
 			"Encontre Cores RGB () em Breve Mais Cores e Também Opções Hexadecimal, HSL (), HSV (), HWB (), CMYK ()",
 			url("color_palette"),
-			"https://via.placeholder.com/1200x628.png?text=Sobre+RecicladArte"
+			"https://via.placeholder.com/1200x628.png?text=Sobre+DevPegasus"
 		);
 
 		echo $this->view->render("color_palette", [
@@ -96,7 +95,7 @@ class WebController{
 			"Gerador de conteúdo | ".SITE,
 			"Gerador de conteúdo",
 			url("gerador_de_conteudo"),
-			"https://via.placeholder.com/1200x628.png?text=Sobre+RecicladArte"
+			"https://via.placeholder.com/1200x628.png?text=Sobre+DevPegasus"
 		);
 		echo $this->view->render("content_generator", [
 			"head" => $head,
