@@ -5,18 +5,18 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '87fac0aa3b9baac2ee616048e9f816aa410b72fb',
+        'reference' => 'c1bb68b2bab1c4bbecd734901f88fd4e673dcc92',
         'name' => 'mayconnascimentodeoliveira/devpegasus',
         'dev' => true,
     ),
     'versions' => array(
-        'coffeecode/datalayer' => array(
-            'pretty_version' => '1.1.8',
-            'version' => '1.1.8.0',
+        'coffeecode/cropper' => array(
+            'pretty_version' => '2.0.3',
+            'version' => '2.0.3.0',
             'type' => 'library',
-            'install_path' => __DIR__ . '/../coffeecode/datalayer',
+            'install_path' => __DIR__ . '/../coffeecode/cropper',
             'aliases' => array(),
-            'reference' => '52e209190752eccc0bfd8ff3abcdd607ed4c01c1',
+            'reference' => '1f2873579dc3940e939ce04a9d995af57f53813a',
             'dev_requirement' => false,
         ),
         'coffeecode/optimizer' => array(
@@ -28,15 +28,6 @@
             'reference' => '53c00844e3316a74f8f076b0b325ceb140d41b70',
             'dev_requirement' => false,
         ),
-        'coffeecode/paginator' => array(
-            'pretty_version' => '1.0.7',
-            'version' => '1.0.7.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../coffeecode/paginator',
-            'aliases' => array(),
-            'reference' => 'a6941246f7ccd842be2072d796d4fb448c22cdb1',
-            'dev_requirement' => false,
-        ),
         'coffeecode/router' => array(
             'pretty_version' => '1.0.8',
             'version' => '1.0.8.0',
@@ -44,15 +35,6 @@
             'install_path' => __DIR__ . '/../coffeecode/router',
             'aliases' => array(),
             'reference' => '29f73e12351a116e9bbb3f695595777a09e18077',
-            'dev_requirement' => false,
-        ),
-        'league/csv' => array(
-            'pretty_version' => '9.9.0',
-            'version' => '9.9.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../league/csv',
-            'aliases' => array(),
-            'reference' => 'b4418ede47fbd88facc34e40a16c8ce9153b961b',
             'dev_requirement' => false,
         ),
         'league/plates' => array(
@@ -70,7 +52,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '87fac0aa3b9baac2ee616048e9f816aa410b72fb',
+            'reference' => 'c1bb68b2bab1c4bbecd734901f88fd4e673dcc92',
             'dev_requirement' => false,
         ),
         'monolog/monolog' => array(
@@ -105,6 +87,24 @@
             'provided' => array(
                 0 => '1.0.0',
             ),
+        ),
+        'rosell-dk/image-mime-type-guesser' => array(
+            'pretty_version' => '0.3.1',
+            'version' => '0.3.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rosell-dk/image-mime-type-guesser',
+            'aliases' => array(),
+            'reference' => '5915934d66a7869cecc7141adf90581aad81023d',
+            'dev_requirement' => false,
+        ),
+        'rosell-dk/webp-convert' => array(
+            'pretty_version' => '2.5.0',
+            'version' => '2.5.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rosell-dk/webp-convert',
+            'aliases' => array(),
+            'reference' => 'b349da7b6e04a4c269bbbbf7c279e0e433a71fd0',
+            'dev_requirement' => false,
         ),
     ),
 );

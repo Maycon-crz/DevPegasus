@@ -42,12 +42,13 @@ class LoginModel extends Connection{
                             if(password_verify($loginDTO->getPassword(), $this->data["data"][0]["pass"])){
                                 $this->response = $this->loginRepository($loginDTO);
                             }else{
-                                $this->response["data"] = "Senha ou E-mail inválidos!";
+                                $this->response["status"] = "error";
+                                $this->response["data"] = "Senha ou E-mail inválidos! 1";
                             }
 						}else{ $this->response["data"] = "Senha ou E-mail inválidos ou usuário desativado!"; }
-					}else{ $this->response["data"] = "Senha ou E-mail inválidos!"; }
-				}else{ $this->response["data"] ="Senha ou E-mail inválidos"; }
-			}else{ $this->response["data"] = "Senha ou E-mail inválidos!"; }
+					}else{ $this->response["data"] = "Senha ou E-mail inválidos! 2"; }
+				}else{ $this->response["data"] ="Senha ou E-mail inválidos 3"; }
+			}else{ $this->response["data"] = "Senha ou E-mail inválidos! 4"; }
 		}else{ $this->response["data"] = $this->msg; }
 		return $this->response;
 	}

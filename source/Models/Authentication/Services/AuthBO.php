@@ -6,8 +6,8 @@ class AuthBO{
     private static $key;
     private static $externalAppKey;
     public function __construct(){
-		self::$key = "chave_de_api";
-        self::$externalAppKey = "chave_externa_de_api";
+		self::$key = "2y10i6fUcoi8OzRmpXed1NoDveR9nVNmi5CRN.kGSJBp/sGxgFD0x7sYm";
+        self::$externalAppKey = "2y10i6fUcoi8OzRmpXed1NoDveR9nVNmi5CRN.kGSJBp/sGxgFD0x7sYm";
 	}
     public function generateAppKey() : array{
         /*Caso o acesso da API for pelo site*/

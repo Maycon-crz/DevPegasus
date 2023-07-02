@@ -14,7 +14,7 @@ abstract class Connection{
 	protected static function getConn(){
 		try {
 			if (self::$conn == null) {/*Singleton - para uma instanciação única*/
-				self::$conn = new PDO('mysql: host=localhost; dbname=modelo_site_db; charset=utf8', 'root', 'root');
+				self::$conn = new PDO('mysql: host=localhost; dbname=devpegasus_db; charset=utf8', 'root', 'root');
 				// Configurações adicionais, se necessário
 			}
 			

@@ -1,5 +1,6 @@
+<?php if (session_status() === PHP_SESSION_NONE) { session_start(); } ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,8 +38,11 @@
 		    <div class="collapse navbar-collapse" id="navbarNav">		         	
 					<a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url() ?>">Home</a>
           <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("sobre"); ?>">Sobre</a>
-					<a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("contato"); ?>">Contato</a>
-          <!-- <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("luana"); ?>">Entrar</a> -->
+          <?php if (!isset($_SESSION["email"]) || isset($_SESSION["email"]) === false) : ?>
+					  <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("contato"); ?>">Contato</a>
+          <?php else: ?>
+            <a title="" id="buttonLogOut" class="form-control btn btn-outline-danger py-2 my-2">SAIR</a>
+          <?php endif; ?>
 				</div>
 			</div>
 		<?php

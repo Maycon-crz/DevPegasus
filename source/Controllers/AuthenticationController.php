@@ -71,14 +71,6 @@ class AuthenticationController extends MiddlewareAccess{
 	}
 	public function userRegistrationController(): void{
 		$this->middlewareForSimpleAccess->checkAppKey($this->view);
-		// $this->system = isset($_POST['system']) ? $this->genericTools->filter($_POST['system']) : "";
-		// $this->fullName = isset($_POST['full_name']) ? $this->genericTools->filter($_POST['full_name']) : "";
-		// $this->email = isset($_POST['email']) ? $this->genericTools->filter($_POST['email']) : "";
-		// $this->emailConf = isset($_POST['email_conf']) ? $this->genericTools->filter($_POST['email_conf']) : "";
-		// $this->password = isset($_POST['password']) ? $this->genericTools->filter($_POST['password']) : "";
-		// $this->passwordConf = isset($_POST['password_conf']) ? $this->genericTools->filter($_POST['password_conf']) : "";
-		// $this->terms = isset($_POST['terms']) ? $this->genericTools->filter($_POST['terms']) : "";		
-
 		$this->userRegistrationDTO->setFrontEnd(isset($_POST['front_end']) ? $this->genericTools->filter($_POST['front_end']) : "");
 		$this->userRegistrationDTO->setFullName(isset($_POST['full_name']) ? $this->genericTools->filter($_POST['full_name']) : "");
 		$this->userRegistrationDTO->setEmail(isset($_POST['email']) ? $this->genericTools->filter($_POST['email']) : "");

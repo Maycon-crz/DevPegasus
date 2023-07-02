@@ -7,7 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
 {
     public static $files = array (
-        '9e4824c5afbdc1482b6025ce3d4dfde8' => __DIR__ . '/..' . '/league/csv/src/functions_include.php',
         'e471bf351add62873bc0289ccd6a937f' => __DIR__ . '/..' . '/league/plates/src/Template/match.php',
         '152c98af9456eeb8f53697d6a7dfd689' => __DIR__ . '/..' . '/league/plates/src/Extension/Data/data.php',
         'e20239a76b73b9912f51f0005956d1db' => __DIR__ . '/..' . '/league/plates/src/Extension/Path/path.php',
@@ -20,6 +19,10 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'WebPConvert\\' => 12,
+        ),
         'S' => 
         array (
             'Source\\' => 7,
@@ -36,18 +39,24 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         'L' => 
         array (
             'League\\Plates\\' => 14,
-            'League\\Csv\\' => 11,
+        ),
+        'I' => 
+        array (
+            'ImageMimeTypeGuesser\\' => 21,
         ),
         'C' => 
         array (
             'CoffeeCode\\Router\\' => 18,
-            'CoffeeCode\\Paginator\\' => 21,
             'CoffeeCode\\Optimizer\\' => 21,
-            'CoffeeCode\\DataLayer\\' => 21,
+            'CoffeeCode\\Cropper\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'WebPConvert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/webp-convert/src',
+        ),
         'Source\\' => 
         array (
             0 => __DIR__ . '/../..' . '/source',
@@ -68,25 +77,21 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
         ),
-        'League\\Csv\\' => 
+        'ImageMimeTypeGuesser\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/csv/src',
+            0 => __DIR__ . '/..' . '/rosell-dk/image-mime-type-guesser/src',
         ),
         'CoffeeCode\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/router/src',
         ),
-        'CoffeeCode\\Paginator\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/coffeecode/paginator/src',
-        ),
         'CoffeeCode\\Optimizer\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/optimizer/src',
         ),
-        'CoffeeCode\\DataLayer\\' => 
+        'CoffeeCode\\Cropper\\' => 
         array (
-            0 => __DIR__ . '/..' . '/coffeecode/datalayer/src',
+            0 => __DIR__ . '/..' . '/coffeecode/cropper/src',
         ),
     );
 
