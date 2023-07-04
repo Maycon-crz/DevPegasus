@@ -1,12 +1,13 @@
 <?php 
 	use CoffeeCode\Cropper\Cropper;
 	$v->layout("_theme");
-	$cropperPosts = new Cropper("theme/assets/img/posts/cache");
+	$cropperPosts = new Cropper("theme/assets/img/cache");
+	$cropperGeneric = new Cropper("theme/assets/img/genericCache");
 ?>
 
 <main class="row shadow-lg">
 	<header class="col-12 border rounded">
-		<h1>Aqui Você Vai Encontrar Ferramentas para Desenvolvedores, Web Designers, Criadores de Conteúdo e Programadores, futuramente open source para podermos evoluir mais rápido e melhor.</h1>
+		<h1>Aqui Você Vai Encontrar Ferramentas para Desenvolvedores, Web Designers, Criadores de Conteúdo e Programadores. Junte-se a nós e Faça elevar o seu cosmo de desenvolvedor!</h1>
 		<span>O Tempo Voa! | <time datetime="2021-07-16 15:44"></time></span>
 	</header>
 </main>
@@ -101,13 +102,18 @@
 		</li>
 	</div>
 </section>
+<section class="row text-center border rounded pt-3 mt-3">
+	<div class="col-12">
+		<h3>Postagens</h3>
+	</div>
+</section>
 <?php
 	$qtdPosts = count($posts["data"]);	
 	if($qtdPosts > 0) :
 	$postsPerPage = 4;
 	if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/iphone|android|blackberry|opera mini|mobile/', strtolower($_SERVER['HTTP_USER_AGENT']))) : $postsPerPage = 1; endif;
 ?>
-<section id="postsCarousel" class="row shadow-lg border rounded carousel slide mt-3" data-bs-ride="carousel">
+<section id="postsCarousel" class="row shadow-lg border rounded carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <?php for ($i = 0; $i < $qtdPosts; $i += $postsPerPage) : ?>
             <div class="carousel-item <?= ($i == 0) ? 'active' : ''; ?>">
@@ -121,7 +127,7 @@
                                     <!-- código para adicionar o título do filme -->
                                     <h2 class="card-title text-wrap h5 titleCard"><?= substr($posts["data"][$k]["title"], 0, 160); ?></h2>
                                     <!-- código para adicionar a descrição do filme -->
-                                    <p class="card-text"><?= substr($posts["data"][$k]["descriptions"], 0, 200); ?></p>
+                                    <p class="card-text"><?= substr($posts["data"][$k]["descriptions"], 0, 200); ?>...</p>
                                 </div>
                                 <div class="card-footer">
                                     <!-- código para adicionar o botão de "Ver Mais" -->
@@ -138,16 +144,12 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <p class="card-text border"><?= $posts["data"][$k]["descriptions"]; ?></p>
-                                        <div id="divDataAdditionalForModalPHP<?= $posts["data"][$k]["id"]; ?>"></div>
+										<p class="card-text border"><?= $posts["data"][$k]["descriptions"]; ?></p>
+										<img src="<?= $cropperPosts->make('theme/assets/img/posts/' . $posts["data"][$k]["image"], "600"); ?>" alt="<?= $posts["data"][$k]["title"]; ?> Imagem descritiva" class="form-control imagesPosts mx-auto mt-3">
+										<p class="card-text border mt-3">Data da publicação: <?= $posts["data"][$k]["registration_date"]; ?></p>
                                     </div>
-                                    <div class="modal-footer">
-                                    <?php if(isset($_SESSION["email"]) || isset($_SESSION["email"]) !== false) : ?>
-                                        <button type="button" class="btn btn-info" data-bs-dismiss="modal"><a href="usuario" class="text-dark text-decoration-none">Comprar</a></button>                                        
-                                    <?php else: ?>
-                                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalLogin">Comprar</button>
-                                    <?php endif; ?>
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    <div class="modal-footer">                                    
+                                    	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                                     </div>
                                 </div>
                             </div>
@@ -168,25 +170,23 @@
     </button>
 </section>
 <?php endif; ?>
-<section class="row shadow-lg border rounded mt-3">
+<section class="row shadow-lg border rounded mt-3 py-5">
 	<div class="col-12">
-		<h3>Sites produzidos por Maycon Nascimento de olivera - Criador do DevPegasus:</h3>
+		<h3 class="text-center">Sites desenvolvidos</h3>
 	</div>
-</section>
-<section class="row shadow-lg border rounded mt-3">
 	<div class="col-1">&nbsp;</div>
 	<div class="col-5 text-center">
-		<a target="_blank" href="https://receitasedrinks.com/">
-			<h4 class="my-3 text-dark h2 text-center">Receitas e Drinks</h4>
-			<img alt="logo do site Receitas e Drinks" src="theme/assets/img/logo_receitas_e_drinks.png" class="form-control p-0 border shadow-lg rounded my-3">
-		</a>
-	</div>
-	<div class="col-5 text-center">
 		<a target="_blank" href="https://recicladarte.com/">
-			<h4 class="my-3 text-dark h2 text-center">Site RecicladArte</h4>
-			<img alt="logo do site logo RecicladArte" src="theme/assets/img/logo_recicladarte.jpg" class="form-control p-0 border shadow-lg rounded my-3">
+			<h4 class="my-3 text-dark text-center">Site RecicladArte</h4>
+			<img src="<?= $cropperGeneric->make('theme/assets/img/logo_recicladarte.jpg', "300"); ?>" alt="logo do site logo RecicladArte" class="form-control mx-auto mt-3">
 		</a>
 	</div>
+	<div class="col-5 text-center">		
+		<a target="_blank" href="https://receitasedrinks.com/">
+			<h4 class="my-3 text-dark text-center">Receitas e Drinks</h4>
+			<img src="<?= $cropperGeneric->make('theme/assets/img/logo_receitas_e_drinks.png', "300"); ?>" alt="logo do site Receitas e Drinks" class="form-control mx-auto mt-3">
+		</a>
+	</div>	
 	<div class="col-1">&nbsp;</div>
 </section>
 

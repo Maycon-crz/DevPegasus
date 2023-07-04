@@ -35,12 +35,13 @@
 				<a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span>| | |</span>
         </a>	
-		    <div class="collapse navbar-collapse" id="navbarNav">		         	
+		    <div class="collapse navbar-collapse" id="navbarNav">
 					<a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url() ?>">Home</a>
-          <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("sobre"); ?>">Sobre</a>
           <?php if (!isset($_SESSION["email"]) || isset($_SESSION["email"]) === false) : ?>
+            <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("sobre"); ?>">Sobre</a>
 					  <a title="" class="nav-item form-control btn btn-dark my-3" href="<?= url("contato"); ?>">Contato</a>
-          <?php else: ?>
+          <?php else: ?>            
+            <a title="" class="nav-item form-control btn btn-outline-success my-2" href="<?= url("user"); ?>">Painel</a>
             <a title="" id="buttonLogOut" class="form-control btn btn-outline-danger py-2 my-2">SAIR</a>
           <?php endif; ?>
 				</div>
