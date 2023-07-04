@@ -170,3 +170,16 @@ li{
     text-align: center;
     z-index: 1060;
 }
+
+/* Estilos personalizados para os controladores do slide */
+.carousel-control-prev,
+.carousel-control-next {
+    border: none;
+    background-color: transparent;
+    width: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+}

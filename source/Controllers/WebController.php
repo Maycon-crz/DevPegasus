@@ -5,19 +5,25 @@ namespace Source\Controllers;
 use League\Plates\Engine;
 use CoffeeCode\Optimizer\Optimizer;
 use Source\Support\Seo;
+use Source\Models\UserOptions\PostModel;
 
 class WebController{
 	/*@var Engine*/
 	private $view;
 	/*@var $seo Seo*/
 	private $seo;
+	/* --- */
+	private $postModel;
+	private $response = array();
 	/*Web constructor*/
 	public function __construct($router){
 		$this->view = Engine::create(__DIR__."/../../theme", "php");
 		$this->view->addData(["router" => $router]);
 		$this->seo = new Seo();
+		$this->postModel = new PostModel();
 	}
 	public function home($data): void{
+		$this->response = $this->postModel->getPosts("", 1);
 		$head = $this->seo->render(
 			"Home | ".SITE,
 			"Ferramentas Grátis para Desenvolvedores, Web Designers, Criadores de Conteúdo e Programadores.",			
@@ -26,7 +32,8 @@ class WebController{
 			"https://via.placeholder.com/1200x628.png?text=Contato+DevPegasus"
 		);
 		echo $this->view->render("home", [
-			"head" => $head
+			"head" => $head,
+			"posts" => $this->response
 		]);
 	}
 
