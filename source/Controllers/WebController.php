@@ -6,6 +6,7 @@ use League\Plates\Engine;
 use CoffeeCode\Optimizer\Optimizer;
 use Source\Support\Seo;
 use Source\Models\UserOptions\PostModel;
+use Source\Models\FeedRSS\FeedRssModel;
 
 class WebController{
 	/*@var Engine*/
@@ -14,13 +15,15 @@ class WebController{
 	private $seo;
 	/* --- */
 	private $postModel;
-	private $response = array();
+	private $response = array();	
+	private $feedRssModel;
 	/*Web constructor*/
 	public function __construct($router){
 		$this->view = Engine::create(__DIR__."/../../theme", "php");
 		$this->view->addData(["router" => $router]);
 		$this->seo = new Seo();
 		$this->postModel = new PostModel();
+		$this->feedRssModel = new FeedRssModel();
 	}
 	public function home($data): void{
 		$this->response = $this->postModel->getPosts("", 1);
@@ -120,6 +123,29 @@ class WebController{
 		echo $this->view->render("politics", [
 			"head" => $head,
 		]); 
+	}
+	public function curriculumGenerator(): void{
+		$head = $this->seo->render(
+			"Gerador de currículo | ".SITE,
+			"Crie seu currículo profissional de forma rápida e fácil na nossa plataforma. Destaque suas habilidades e conquiste oportunidades!",
+			url("curriculum_generator"),
+			"https://via.placeholder.com/1200x628.png?text=gerador"
+		);
+		echo $this->view->render("curriculum_generator", [
+			"head" => $head,
+		]);
+	}
+	public function feed($data): void{
+		$head = $this->seo->render(
+			"Feed | ".SITE,
+			"Feed de conteúdo",
+			url("feed"),
+			"https://via.placeholder.com/1200x628.png?text=FeedRSS+DevPegasus"
+		);
+		$this->response = $this->feedRssModel->renderRss(url());
+		echo $this->view->render("feed", [
+			"data" => $this->response
+		]);
 	}
 	public function error(array $data): void{
 		$head = $this->seo->render(

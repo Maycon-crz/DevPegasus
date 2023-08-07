@@ -57,21 +57,24 @@
             <div class='row'>
               <div class='col-1'>&nbsp;</div>
               <div class='col-5'>
-              	<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("texto"); ?>">Ferramentas de Texto</a>
+                <a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("curriculum_generator"); ?>">Gerador de Currículos</a>
               </div>
               <div class='col-5'>
-              	<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("dicas_conhecimento"); ?>">Dicas e Conhecimento</a>
+                <a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("texto"); ?>">Ferramentas de Texto</a>              	
               </div>
               <div class='col-1'>&nbsp;</div>
             </div>
           </div>
           <div class="carousel-item">
             <div class='row'>
-              <div class='col-4'>&nbsp;</div>
-                <div class='col-4'>
-                 		<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("palheta_de_cores"); ?>">Palheta de Cores</a>               	
+              <div class='col-1'>&nbsp;</div>
+              <div class='col-5'>
+                 		<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("palheta_de_cores"); ?>">Palheta de Cores</a>
                 </div>
-              <div class='col-4'>&nbsp;</div>
+              <div class='col-5'>
+                <a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("dicas_conhecimento"); ?>">Dicas e Conhecimento</a>
+              </div>
+              <div class='col-1'>&nbsp;</div>
             </div>
           </div>
         </div>

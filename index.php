@@ -18,11 +18,14 @@ $router->get("/", "WebController:home");
 $router->get("/contato", "WebController:contact");
 $router->get("/sobre", "WebController:about");
 $router->get("/texto", "WebController:text");
-$router->get("/dicas_conhecimento", "WebController:tips_knowledge");
-$router->get("/palheta_de_cores", "WebController:color_palette");
+$router->get("/dicas_conhecimento", "WebController:tips_knowledge");/*Arrumar essa nome de função*/
+$router->get("/palheta_de_cores", "WebController:color_palette");/*Arrumar essa nome de função*/
+$router->get("/curriculum_generator", "WebController:curriculumGenerator");
+$router->get("/feed", "WebController:feed");
 
 $router->get("/login", "AuthenticationController:loginPageController");
 $router->get("/user", "UserController:dashboard");
+
 
 /**
  * LUANA IA
