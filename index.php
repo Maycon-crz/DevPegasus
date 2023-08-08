@@ -42,7 +42,7 @@ $router->post("/createsession", "AuthenticationController:createSession");
 $router->post("/login", "AuthenticationController:loginController");
 $router->post("/logout", "AuthenticationController:logoutController");
 $router->post("/post/{section}", "UserController:post");
-
+$router->post("/curriculum_generator", "UserController:curriculumGeneratorController");
 
 /**
  * ERROR
