@@ -1,4 +1,7 @@
-<?php $v->layout("_theme"); ?>
+<?php
+    use Dompdf\Dompdf;
+    $v->layout("_theme");
+?>
 
 <section class="row">
     <div class="col-12">
@@ -6,7 +9,7 @@
     </div> 
 </section>
 <section class="row">
-    <form id="formGenerateCurriculum" class="col-12">
+    <form id="formGenerateCurriculum_remover_esse_id" method="post" action="<?= url("curriculum_render"); ?>" class="col-12">
         <div class="row">
             <div class="col-6 mb-3">
                 <label for="nomeCompleto" class="form-label">Nome Completo:</label>

@@ -21,6 +21,7 @@ $router->get("/texto", "WebController:text");
 $router->get("/dicas_conhecimento", "WebController:tips_knowledge");/*Arrumar essa nome de função*/
 $router->get("/palheta_de_cores", "WebController:color_palette");/*Arrumar essa nome de função*/
 $router->get("/curriculum_generator", "WebController:curriculumGenerator");
+$router->post("/curriculum_render", "UserController:curriculumGeneratorController");
 $router->get("/feed", "WebController:feed");
 
 $router->get("/login", "AuthenticationController:loginPageController");

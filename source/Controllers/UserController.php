@@ -11,7 +11,9 @@ use Source\Controllers\Middlewares\MiddlewareForSimpleAccess;
 use Source\Models\UserOptions\PostModel;
 use Source\Models\UserOptions\DataTransferObjects\PostDTO;
 use Source\Models\UserOptions\DataTransferObjects\CurriculumDTO;
+use Source\Models\UserOptions\CurriculumModel;
 use stdClass;
+use Dompdf\Dompdf;
 
 class UserController extends MiddlewareAccess{
 	private $view;
@@ -22,6 +24,7 @@ class UserController extends MiddlewareAccess{
 	private $postModel;
 	private $postDTO;
 	private $curriculumDTO;
+	private $curriculumModel;
 	private $response;
 	private $isRoute;
 	private $title;
@@ -147,9 +150,22 @@ class UserController extends MiddlewareAccess{
 			$this->curriculumDTO->informacoesAdicionais[] = $this->genericTools->filter($_POST["informacoesAdicionais{$counter}"]);
 			$counter++;
 		}
-		
-		echo $this->view->render("api", [
-			"dados" => $this->curriculumDTO->toArray()
-		]);
+
+		$this->curriculumModel = new CurriculumModel();
+		$this->response = $this->curriculumModel->generatePDF($this->curriculumDTO);
+
+		$dompdf = new Dompdf();
+
+		$dompdf->loadHtml($this->response);
+
+		// (Optional) Setup the paper size and orientation
+		$dompdf->setPaper('A4', 'landscape');
+
+		// Render the HTML as PDF
+		$dompdf->render();
+
+		// Output the generated PDF to Browser
+		$dompdf->stream();	
+
 	}
 }

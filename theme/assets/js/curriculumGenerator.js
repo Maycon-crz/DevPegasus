@@ -186,8 +186,7 @@ class CurriculumGenerator{
     createElementGeneric(tag, classe = '', conteudo = '', atributos = {}) {
         const elemento = document.createElement(tag);
         elemento.className = classe;
-        elemento.innerHTML = conteudo;
-        console.log(atributos);
+        elemento.innerHTML = conteudo;        
         for (const atributo in atributos) {
           elemento.setAttribute(atributo, atributos[atributo]);
         }
@@ -195,50 +194,40 @@ class CurriculumGenerator{
     }
     generateCurriculo(session) {
         $("#formGenerateCurriculum").submit(function(ev){		
-			ev.preventDefault();
-			var formData = new FormData(this);
-			const appKey = session.checkCookieSession("createsessioncookie");
+            ev.preventDefault();
+            var formData = new FormData(this);  // 'this' é um objeto jQuery
+            const appKey = session.checkCookieSession("createsessioncookie");
             var urlSite = $("#urlSite").val();
             var loadingGif = document.querySelector(".loadingGif");
             loadingGif.innerHTML = "<div class='spinner-border text-success' role='status'><span class='sr-only'></span></div>";
             if (appKey) {
-				formData.append("front_end", "web");
-				formData.append("app_key", appKey);
-				/*DEBUG
-                for (const pair of formData.entries()) {
-					console.log(pair[0] + ', ' + pair[1]);
-				}
-                */                
-				$.ajax({
-					url: urlSite+"/api/curriculum_generator",
-					type: 'POST',
-					data: formData,
-					success: function(response){
-						loadingGif.innerHTML = "";
-						console.log(response);
-						// if(response.status == "success"){
-						// 	alert(response.data);
-						// 	window.location.href = urlSite;
-						// }
-						// const triangle = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svgIcons"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>';
-						// $("#smgErrorRegistrationPost").html(triangle+response.data);
-					},
-					cache: false,
-					contentType: false,
-					processData: false,
-					xhr: function(){  // Custom XMLHttpRequest
-						var myXhr = $.ajaxSettings.xhr();
-						if (myXhr.upload) { // Avalia se tem suporte a propriedade upload
-							myXhr.upload.addEventListener('progress', function(){
-								/* faz alguma coisa durante o progresso do upload */
-							}, false);
-						}
-					return myXhr;
-					}
-				});
-			}else{ alert("Erro de autenticação, recarregue a página!"); }
-		});
-    }
+                alert("Já tentei fazer direto não deu certo, DEVO USAR o exemplo do phpTips lá tem como fazer!");
+                // formData.append("front_end", "web");
+                // formData.append("app_key", appKey);
+                // $.ajax({
+                //     url: urlSite+"/api/curriculum_generator",
+                //     type: "POST",
+                //     data: formData,  // Use o elemento HTMLFormElement
+                //     dataType: "json",
+                //     processData: false,  // Evita que o jQuery processe os dados
+                //     contentType: false,  // Evita que o jQuery defina o tipo de conteúdo
+                //     success: function(response){
+                //         loadingGif.innerHTML = "";
+                //         console.log(response);
+                //         // Decodifica o PDF Base64 e cria um link de download
+                //         var pdfData = atob(response.pdfBase64);
+                //         var blob = new Blob([pdfData], { type: 'application/pdf' });
+                //         var link = document.createElement('a');
+                //         link.href = window.URL.createObjectURL(blob);
+                //         link.download = 'curriculo.pdf';
+                //         link.click();
+                //     }
+                // });
+            } else {
+                alert("Erro de autenticação, recarregue a página!");
+            }
+        });
+    }    
 }
 
 const curriculumGenerator = new CurriculumGenerator(new Session());

@@ -108,8 +108,7 @@
   <script src="<?= url('theme/assets/js/authentication/session.js'); ?>"></script>
 	<?php if (!isset($_SESSION["token"]) || $_SESSION["token"] === false) : ?>	
 		<?php include "theme/include/modalLogin.php"; ?>
-		<script src="<?= url('theme/assets/js/authentication/login.js'); ?>"></script>
-		<script src="<?= url('theme/assets/js/authentication/userRegistration.js'); ?>"></script>		
+		<script src="<?= url('theme/assets/js/authentication/login.js'); ?>"></script>		
 	<?php else: ?>
 		<script src="<?= url('theme/assets/js/authentication/logOut.js'); ?>"></script>
 	<?php endif; ?>

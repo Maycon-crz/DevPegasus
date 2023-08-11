@@ -25,7 +25,9 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         ),
         'S' => 
         array (
+            'Svg\\' => 4,
             'Source\\' => 7,
+            'Sabberworm\\CSS\\' => 15,
         ),
         'P' => 
         array (
@@ -35,6 +37,7 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Masterminds\\' => 12,
         ),
         'L' => 
         array (
@@ -43,6 +46,14 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         'I' => 
         array (
             'ImageMimeTypeGuesser\\' => 21,
+        ),
+        'F' => 
+        array (
+            'FontLib\\' => 8,
+        ),
+        'D' => 
+        array (
+            'Dompdf\\' => 7,
         ),
         'C' => 
         array (
@@ -57,9 +68,17 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         array (
             0 => __DIR__ . '/..' . '/rosell-dk/webp-convert/src',
         ),
+        'Svg\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
         'Source\\' => 
         array (
             0 => __DIR__ . '/../..' . '/source',
+        ),
+        'Sabberworm\\CSS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -73,6 +92,10 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Masterminds\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/masterminds/html5/src',
+        ),
         'League\\Plates\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
@@ -80,6 +103,14 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
         'ImageMimeTypeGuesser\\' => 
         array (
             0 => __DIR__ . '/..' . '/rosell-dk/image-mime-type-guesser/src',
+        ),
+        'FontLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
+        ),
+        'Dompdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
         ),
         'CoffeeCode\\Router\\' => 
         array (
@@ -97,6 +128,7 @@ class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Dompdf\\Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
