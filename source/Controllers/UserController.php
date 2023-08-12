@@ -159,13 +159,14 @@ class UserController extends MiddlewareAccess{
 		$dompdf->loadHtml($this->response);
 
 		// (Optional) Setup the paper size and orientation
-		$dompdf->setPaper('A4', 'landscape');
+		// $dompdf->setPaper('A4', 'landscape');
+		$dompdf->setPaper('A4');
 
 		// Render the HTML as PDF
 		$dompdf->render();
 
 		// Output the generated PDF to Browser
-		$dompdf->stream();	
+		$dompdf->stream("curriculo_.pdf", ["Attachment" => false]);	
 
 	}
 }

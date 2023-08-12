@@ -9,7 +9,7 @@
     </div> 
 </section>
 <section class="row">
-    <form id="formGenerateCurriculum_remover_esse_id" method="post" action="<?= url("curriculum_render"); ?>" class="col-12">
+    <form id="" method="post" action="<?= url("curriculum_render"); ?>" class="col-12">
         <div class="row">
             <div class="col-6 mb-3">
                 <label for="nomeCompleto" class="form-label">Nome Completo:</label>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-3">
+            <!-- <div class="col-3">
                 <label for="sexo">Sexo:</label>
                 <select id="sexo" name="sexo" class="form-select">
                     <option value="" disabled selected>Selecione o sexo</option>
@@ -34,12 +34,12 @@
                     <option value="transgenero">Transgênero</option>
                     <option value="nao_informar">Desejo não informar</option>
                 </select>
-            </div>
-            <div class="col-3">
+            </div> -->
+            <div class="col-6">
                 <label for="idade">Idade(anos):</label>
                 <input type="text" id="idade" name="idade" class="form-control" />
             </div>
-            <div class="col-3">
+            <div class="col-6">
                 <label for="estadoCivil">Estado Civil:</label>
                 <select id="estadoCivil" name="estadoCivil" class="form-select">
                     <option value="" disabled selected>Selecione o estado civil</option>
@@ -51,13 +51,13 @@
                 </select>
 
             </div>
-            <div class="col-3">
+            <!-- <div class="col-3">
                 <label for="temFilhos">Tem Filhos(s)?:</label>
                 <select name="temFilhos" id="temFilhos" class="form-select">
                     <option value="yes">Sim</option>
                     <option value="no">Não</option>
                 </select>
-            </div>
+            </div> -->
         </div>
         <div class="row mb-3">
             <div class="col-6">
