@@ -167,6 +167,5 @@ class UserController extends MiddlewareAccess{
 
 		// Output the generated PDF to Browser
 		$dompdf->stream("curriculo_.pdf", ["Attachment" => false]);	
-
 	}
 }

@@ -127,10 +127,8 @@
                 <label for="conclusaoCurso0" class="form-label">Conclusão de Curso:</label>
                 <select id="conclusaoCurso0" name="conclusaoCurso0" class="form-select">
                     <option value="" disabled selected>Selecione a conclusão do curso</option>
-                    <option value="concluido">Concluído</option>
-                    <option value="cursando">Cursando</option>
-                    <option value="interrompido">Interrompido</option>
-                    <option value="previsto">Previsto</option>
+                    <option value="Concluído em">Concluído</option>
+                    <option value="Conclusão em">Em andamento</option>
                 </select>
             </div>
             <div class="col-4">

@@ -64,10 +64,8 @@ class CurriculumGenerator{
         $("#btAddCourse").click(function(){
             const courseOptions = [
                 { value: "", text: "Selecione a conclusão do curso", disabled: true, selected: true },
-                { value: "concluido", text: "Concluído" },
-                { value: "cursando", text: "Cursando" },
-                { value: "interrompido", text: "Interrompido" },
-                { value: "previsto", text: "Previsto" },
+                { value: "Concluído em", text: "Concluído" },
+                { value: "Conclusão em", text: "Em andamento" },
             ];
               
             const formGroups = [
