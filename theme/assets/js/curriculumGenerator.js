@@ -70,9 +70,9 @@ class CurriculumGenerator{
               
             const formGroups = [
                 obj.createInputFormGroupCourses("col-12", "text", "Curso:", "curso"+obj.counterCourses, "curso"+obj.counterCourses, true),
-                obj.createInputFormGroupCourses("col-4", "text", "Instituição:", "instituicao"+obj.counterCourses, "instituicao"+obj.counterCourses, true),
-                obj.createSelectFormGroupCourses("col-4", "Conclusão de Curso:", "conclusaoCurso"+obj.counterCourses, "conclusaoCurso"+obj.counterCourses, true, courseOptions),
-                obj.createInputFormGroupCourses("col-4", "text", "Ano de Conclusão:", "anoDeConclusaoCurso"+obj.counterCourses, "anoDeConclusaoCurso"+obj.counterCourses, true),
+                obj.createInputFormGroupCourses("col-12 col-md-4", "text", "Instituição:", "instituicao"+obj.counterCourses, "instituicao"+obj.counterCourses, true),
+                obj.createSelectFormGroupCourses("col-12 col-md-4", "Conclusão de Curso:", "conclusaoCurso"+obj.counterCourses, "conclusaoCurso"+obj.counterCourses, true, courseOptions),
+                obj.createInputFormGroupCourses("col-12 col-md-4", "text", "Ano de Conclusão:", "anoDeConclusaoCurso"+obj.counterCourses, "anoDeConclusaoCurso"+obj.counterCourses, true),
             ];
             
             formGroups.forEach(group => {
@@ -134,19 +134,19 @@ class CurriculumGenerator{
     generateProfessionalExperience(obj){
         $("#btAddProfessionalExperience").click(function(){
             const divRow = document.getElementById("rowAddProfessionalExperience");
-            const divEmpresa = obj.createElementGeneric("div", "col-3 mb-3");
+            const divEmpresa = obj.createElementGeneric("div", "col-12 col-md-3 mb-3");
             divEmpresa.appendChild(obj.createElementGeneric("label", "form-label", "Empresa:"));
             divEmpresa.appendChild(obj.createElementGeneric("input", "form-control", '', { id: "empresa"+obj.counterProfessionalExperience, name: "empresa"+obj.counterProfessionalExperience, required: true }));
         
-            const divAnoEntrada = obj.createElementGeneric("div", "col-3 mb-3");
+            const divAnoEntrada = obj.createElementGeneric("div", "col-12 col-md-3 mb-3");
             divAnoEntrada.appendChild(obj.createElementGeneric("label", "form-label", "Ano de Entrada:"));
             divAnoEntrada.appendChild(obj.createElementGeneric("input", "form-control", '', { id: "anoDeEntrada"+obj.counterProfessionalExperience, name: "anoDeEntrada"+obj.counterProfessionalExperience, required: true }));
         
-            const divAnoSaida = obj.createElementGeneric("div", "col-3 mb-3");
+            const divAnoSaida = obj.createElementGeneric("div", "col-12 col-md-3 mb-3");
             divAnoSaida.appendChild(obj.createElementGeneric("label", "form-label", "Ano de Saída:"));
             divAnoSaida.appendChild(obj.createElementGeneric("input", "form-control", '', { id: "anoDeSaida"+obj.counterProfessionalExperience, name: "anoDeSaida"+obj.counterProfessionalExperience, required: true }));
         
-            const divCargo = obj.createElementGeneric("div", "col-3 mb-3");
+            const divCargo = obj.createElementGeneric("div", "col-12 col-md-3 mb-3");
             divCargo.appendChild(obj.createElementGeneric("label", "form-label", "Cargo:"));
             divCargo.appendChild(obj.createElementGeneric("input", "form-control", '', { id: "cargo"+obj.counterProfessionalExperience, name: "cargo"+obj.counterProfessionalExperience, required: true }));
         
@@ -159,13 +159,13 @@ class CurriculumGenerator{
             divRow.appendChild(divCargo);
             divRow.appendChild(divAtividades);
             obj.counterProfessionalExperience++;
-        });        
+        });
     }
     qualificationsAndComplementaryActivities(obj){
         $("#btAddQualificationsAndComplementaryActivities").click(function(){            
             const divRow = document.getElementById("rowAddQualificationsAndComplementaryActivities");
             const divQualifications = obj.createElementGeneric("div", "col-12 mb-3");
-            divQualifications.appendChild(obj.createElementGeneric("label", "form-label", "Qualifications:"));
+            divQualifications.appendChild(obj.createElementGeneric("label", "form-label", "Qualificações:"));
             divQualifications.appendChild(obj.createElementGeneric("input", "form-control", '', { id: "qualificacoes"+obj.counterQualifications, name: "qualificacoes"+obj.counterQualifications, required: true }));
             divRow.appendChild(divQualifications);
             obj.counterQualifications++;
