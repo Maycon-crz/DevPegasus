@@ -14,7 +14,6 @@ $router->namespace("source\Controllers");
  */
 $router->group(null);
 $router->get("/", "WebController:home");
-$router->get("/", "WebController:home");
 $router->get("/contato", "WebController:contact");
 $router->get("/sobre", "WebController:about");
 $router->get("/texto", "WebController:text");
@@ -22,6 +21,9 @@ $router->get("/dicas_conhecimento", "WebController:tips_knowledge");/*Arrumar es
 $router->get("/palheta_de_cores", "WebController:color_palette");/*Arrumar essa nome de função*/
 $router->get("/curriculum_generator", "WebController:curriculumGenerator");
 $router->post("/curriculum_render", "UserController:curriculumGeneratorController");
+$router->get("/servico_de_desenvolvimento", "WebController:developmentService");
+$router->get("/politica", "WebController:politics");
+
 $router->get("/feed", "WebController:feed");
 
 $router->get("/login", "AuthenticationController:loginPageController");

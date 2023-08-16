@@ -32,7 +32,7 @@ class WebController{
 			"Ferramentas Grátis para Desenvolvedores, Web Designers, Criadores de Conteúdo e Programadores.",			
 			url(),
 			/*TODO: Alterar essa URL!*/
-			"https://via.placeholder.com/1200x628.png?text=Contato+DevPegasus"
+			"https://www.devpegasus.com/theme/assets/img/desenvolvimento_de_sistemas.png"
 		);
 		echo $this->view->render("home", [
 			"head" => $head,
@@ -117,7 +117,7 @@ class WebController{
 			"Politica de Privacidade | ".SITE,
 			"Política de Privacidade",
 			url("politica"),
-			"https://via.placeholder.com/1200x628.png?text=Politica+Cine_7D"
+			"https://via.placeholder.com/1200x628.png?text=Politica+DevPegasus"
 		);
 
 		echo $this->view->render("politics", [
@@ -129,9 +129,20 @@ class WebController{
 			"Gerador de currículo | ".SITE,
 			"Crie seu currículo profissional de forma rápida e fácil na nossa plataforma. Destaque suas habilidades e conquiste oportunidades!",
 			url("curriculum_generator"),
-			"https://via.placeholder.com/1200x628.png?text=gerador"
+			"https://www.devpegasus.com/theme/assets/img/desenvolvimento_de_sistemas.png"
 		);
 		echo $this->view->render("curriculum_generator", [
+			"head" => $head,
+		]);
+	}
+	public function developmentService(){
+		$head = $this->seo->render(
+			"Serviço de Desenvolvimento de Sistemas | ".SITE,
+			"Transforme ideias em soluções digitais com nossos serviços de desenvolvimento de software. Da web ao mobile, criamos tecnologia que impulsiona seu sucesso.",
+			url("development_service"),
+			"https://www.devpegasus.com/theme/assets/img/desenvolvimento_de_sistemas.png"
+		);
+		echo $this->view->render("development_service", [
 			"head" => $head,
 		]);
 	}

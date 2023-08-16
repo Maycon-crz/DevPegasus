@@ -23,6 +23,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?= url("theme/assets/css/style.css"); ?>" />
 	<link rel="shortcut icon" href="<?= url("theme/assets/img/favicon.ico"); ?>"/>
+  <?= $v->section("css"); ?>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg main_nav">		
@@ -68,13 +69,21 @@
           <div class="carousel-item">
             <div class='row'>
               <div class='col-1'>&nbsp;</div>
-              <div class='col-5'>
+              <div class='col-4'>
                  		<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("palheta_de_cores"); ?>">Palheta de Cores</a>
                 </div>
-              <div class='col-5'>
+              <div class='col-4'>
                 <a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("dicas_conhecimento"); ?>">Dicas e Conhecimento</a>
               </div>
               <div class='col-1'>&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <div class='row'>
+              <div class='col-12'>
+                 		<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("palheta_de_cores"); ?>">Preciso de um site</a>
+              </div>
             </div>
           </div>
         </div>
@@ -94,7 +103,7 @@
 	</main>
   <div class="loadingGif"></div>
   <section id='linhaAvisoDeCookies'>
-    <p>Navegando em Nosso Site você Automaticamente Concorda com a Utilização de cookies para oferecer uma melhor experiência de navegação, <a href='politica_privacidade.php'>Saiba mais.</a> <button tipe='button' id='botaoFecharCookies'>X</button></p>
+    <p>Navegando em Nosso Site você Automaticamente Concorda com a Utilização de cookies para oferecer uma melhor experiência de navegação, <a href="<?= url("politica"); ?>">Saiba mais.</a> <button tipe='button' id='botaoFecharCookies'>X</button></p>
   </section>
 	<footer class="container-flex text-center border mt-5">		
 		Todos os Direitos Reservados - <?= SITE; ?> - 2021
