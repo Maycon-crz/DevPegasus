@@ -24,3 +24,7 @@
 .parallax_development_service > .container:hover {
     background-color: rgba(12, 12, 20, 0.9);
 }
+
+.row_card_portfolios > div{
+    height: 100px;
+}

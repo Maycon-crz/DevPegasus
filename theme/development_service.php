@@ -1,13 +1,13 @@
 <?php $v->layout("_theme"); ?>
 
 <section class="row">
-    <div class="col-4">
+    <div class="col-12 col-md-4">
         <a href="#row_desenvolvimento_de_site" class="form-control btn btn-outline-dark">Desenvolvimento de Sites</a>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-md-4">
         <a href="#row_desenvolvimento_aplicativos_para_android" class="form-control btn btn-outline-dark">Aplicativos para Android</a>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-md-4">
         <a href="#row_desenvolvimento_aplicacoes_windows" class="form-control btn btn-outline-dark">Aplicações e Sistemas para Windows</a>
     </div>
 </section>
@@ -22,7 +22,7 @@
             Entre em Contato com o Desenvolvedor
         </a>
     </div>
-    <div class="container text-left">
+    <div class="container text-left ocultar">
         <h3>Imagine ter um site que não apenas representa a sua marca, mas também a impulsiona para o sucesso. Com o nosso serviço de desenvolvimento de sites institucionais, você não está apenas investindo em um site, mas sim em uma ferramenta estratégica para o crescimento do seu negócio.</h3>
         <h4 class="mt-5">💼 Acesso Privado e Personalização Total:</h4>
         <p>Oferecemos um painel de controle exclusivo, permitindo que você tenha controle total sobre o conteúdo do seu site. Cadastre, edite e exclua postagens de forma intuitiva e eficaz, mantendo o seu site sempre atualizado e relevante.</p>
@@ -50,6 +50,30 @@
         <a href="#contato" class="btn btn-outline-info btn-lg">Peça um Orçamento Agora</a>
     </div>
 </section>
+<section class="row">
+    <div class="col-12 col-md-4 my-3">
+        <div class="text-center border p-3">
+            <h4>Projeto Floricultura</h4>
+            <p>Encontrar um projeto de base para recriar e por aqui</p>
+            <button type="button" class="form-control btn btn-outline-info">Ver Projeto</button>
+        </div>
+    </div>
+    <div class="col-12 col-md-4 my-3">
+        <div class="text-center border p-3">
+            <h4>Projeto Painel Solar</h4>
+            <p>Encontrar um projeto de base para recriar e por aqui</p>
+            <button type="button" class="form-control btn btn-outline-info">Ver Projeto</button>
+        </div>
+    </div>
+    <div class="col-12 col-md-4 my-3">
+        <div class="text-center border p-3">
+            <h4>Projeto Peixaria</h4>
+            <p>Encontrar um projeto de base para recriar e por aqui</p>
+            <button type="button" class="form-control btn btn-outline-info">Ver Projeto</button>
+        </div>
+    </div>
+</section>
+
 <section class="parallax_development_service mt-3">
     <div id="row_desenvolvimento_aplicativos_para_android" class="container text-center">
         <h2>Aplicativos para Android</h2>

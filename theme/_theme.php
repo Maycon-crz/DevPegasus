@@ -69,21 +69,22 @@
           <div class="carousel-item">
             <div class='row'>
               <div class='col-1'>&nbsp;</div>
-              <div class='col-4'>
+              <div class='col-5'>
                  		<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("palheta_de_cores"); ?>">Palheta de Cores</a>
                 </div>
-              <div class='col-4'>
+              <div class='col-5'>
                 <a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("dicas_conhecimento"); ?>">Dicas e Conhecimento</a>
               </div>
               <div class='col-1'>&nbsp;</div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
+          <div class="carousel-item">
             <div class='row'>
-              <div class='col-12'>
-                 		<a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("palheta_de_cores"); ?>">Preciso de um site</a>
+              <div class='col-3'>&nbsp;</div>
+              <div class='col-6'>                
+                <a title="" class="nav-item form-control btn btn-outline-dark my-3" href="<?= url("servico_de_desenvolvimento"); ?>">Peça um Orçamento</a>                
               </div>
+              <div class='col-3'>&nbsp;</div>
             </div>
           </div>
         </div>
