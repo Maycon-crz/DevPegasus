@@ -22,6 +22,8 @@ $router->get("/palheta_de_cores", "WebController:color_palette");/*Arrumar essa 
 $router->get("/curriculum_generator", "WebController:curriculumGenerator");
 $router->post("/curriculum_render", "UserController:curriculumGeneratorController");
 $router->get("/servico_de_desenvolvimento", "WebController:developmentService");
+$router->get("/portfolio/{section}", "WebController:portfolio");
+
 $router->get("/politica", "WebController:politics");
 
 $router->get("/feed", "WebController:feed");

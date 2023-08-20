@@ -146,6 +146,31 @@ class WebController{
 			"head" => $head,
 		]);
 	}
+	public function portfolio($data){
+		// $this->response["tab_description"] = "";
+		// $this->response["description"] = "";
+		$this->response["url"] = "error";
+		switch($data["section"]){
+			case "projeto_floricultura":
+				// $this->response["tab_description"] = "Projeto Floricultura";
+				// $this->response["description"] = "Modelo de site para Floricultira";
+				$this->response["url"] = "portfolio_floriculture";
+			break;
+			case "projeto_painel_solar":
+				// $this->response["tab_description"] = "Projeto Painel solar";
+				// $this->response["description"] = "Modelo de site para Empresa de Painel solar";
+				$this->response["url"] = "portfolio_solar_panel";
+			break;
+			case "projeto_peixaria":
+				// $this->response["tab_description"] = "Projeto Peixaria";
+				// $this->response["description"] = "Modelo de site para Peixaria";
+				$this->response["url"] = "portfolio_fish_shop";
+			break;
+		}
+		echo $this->view->render("portfolio/".$this->response["url"], [
+			// "head" => $head,
+		]);
+	}
 	public function feed($data): void{
 		$head = $this->seo->render(
 			"Feed | ".SITE,
@@ -158,7 +183,7 @@ class WebController{
 			"data" => $this->response
 		]);
 	}
-	public function error(array $data): void{
+	public function error(array $data): void{		
 		$head = $this->seo->render(
 			"Error {$data['errcode']} | ".SITE,
 			/*TODO: Alterar e por o E-mail de contato do cliente*/
