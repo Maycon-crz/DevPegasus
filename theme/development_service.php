@@ -54,9 +54,9 @@
     <div class="col-12 col-md-4 my-3">
         <div class="text-center border p-3">
             <h4>Projeto Floricultura</h4>
-            <p>Encontrar um projeto de base para recriar e por aqui</p>
+            <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/home_modelo_site_floricultura.png'); ?>" alt="" class="form-control bg-transparent card-img-square border-0 p-0">
             <a href="https://nicepage.com/pt/st/17055/noruega-modelo-site">Recriar esse modelo</a>
-            <button type="button" class="form-control btn btn-outline-info">Ver Projeto</button>
+            <a href="<?= url("portfolio/projeto_floricultura"); ?>" title="" class="form-control btn btn-outline-info">Ver Projeto</a>
         </div>
     </div>
     <div class="col-12 col-md-4 my-3">
