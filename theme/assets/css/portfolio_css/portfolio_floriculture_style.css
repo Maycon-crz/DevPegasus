@@ -51,6 +51,9 @@ h3{
     letter-spacing: 2px;
     margin: 40px 0 0;    
 }
+.h3-responsive{
+    font-size: 3rem;
+}
 
 .card-img-square{
     height: 300px;
@@ -113,5 +116,14 @@ h2{
     }
     .card-img-rectangular{
         height: 300px;
+    }
+    .img-circle{
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 50%;
+    }
+    .h3-responsive{
+        font-size: 1.9rem;
+        margin-bottom: 3px;
     }
 }

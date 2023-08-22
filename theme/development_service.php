@@ -64,17 +64,17 @@
             <h4>Projeto Painel Solar</h4>
             <p>Encontrar um projeto de base para recriar e por aqui</p>
             <a href="https://nicepage.com/pt/st/5213148/empresa-de-energia-solar-modelo-site">Recriar esse modelo</a>
-            <button type="button" class="form-control btn btn-outline-info">Ver Projeto</button>
+            <a href="<?= url("portfolio/projeto_painel_solar"); ?>" title="" class="form-control btn btn-outline-info">Ver Projeto</a>
         </div>
     </div>
     <div class="col-12 col-md-4 my-3">
         <div class="text-center border p-3">
             <h4>Projeto Peixaria</h4>
-            <p>Encontrar um projeto de base para recriar e por aqui</p>
+            <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/fish_shop/peixaria.PNG'); ?>" alt="" class="form-control bg-transparent card-img-square border-0 p-0">
             <a href="https://nicepage.com/pt/website-templates/preview/produtos-do-mar-3791316?device=desktop">Recriar esse modelo</a>
             <br>
             <a href="https://nicepage.com/pt/st/3814297/hot-and-delicious-modelo-site">Recriar junto com esse</a>
-            <button type="button" class="form-control btn btn-outline-info">Ver Projeto</button>
+            <a href="<?= url("portfolio/projeto_peixaria"); ?>" title="" class="form-control btn btn-outline-info">Ver Projeto</a>
         </div>
     </div>
 </section>

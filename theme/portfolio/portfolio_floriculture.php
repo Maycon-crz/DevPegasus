@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,12 +84,12 @@
                 <div class="col-12 col-md-4">&nbsp;</div>
             </section>
             <section class="row m-1 m-md-5">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/female-gardener-holding-small-roses-pots-close-up.jpg'); ?>" alt="" class="form-control bg-transparent card-img-rectangular border-0 p-0">
                     <p>Nossa floricultura é um verdadeiro oásis de cores e aromas que atraem pessoas de todos os cantos. Seja para presentear alguém querido, decorar eventos especiais ou simplesmente apreciar a beleza da natureza, nossos arranjos são meticulosamente criados para oferecer uma experiência única. Durante os períodos mais movimentados, como datas comemorativas e ocasiões festivas, nossos corredores se enchem de clientes em busca da expressão perfeita de seus sentimentos.</p>
                     <a href="#contato" title="" class="btn btn-outline-info mt-3">Consulte Mais informações</a>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/high-angle-woman-holding-small-pot.jpg'); ?>" alt="" class="form-control bg-transparent card-img-rectangular border-0 p-0">
                     <p>Para aqueles que buscam uma experiência mais tranquila e intimista, recomendamos nos visitar durante a semana. Nos dias úteis, você terá a oportunidade de explorar nossa coleção de flores com a calma que merece, sem as aglomerações típicas dos fins de semana. Assim, poderá apreciar cada detalhe dos nossos arranjos e descobrir a singularidade que cada flor traz consigo.</p>
                     <a href="#contato" title="" class="btn btn-outline-info mt-3">Consulte Mais informações</a>
@@ -101,8 +101,8 @@
                         <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/florist-woman-making-fashion-modern-bouquet-different-flowers-wooden-background.jpg'); ?>" alt="" class="form-control bg-transparent card-img-rectangular border-0 p-0">
                         <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
                             <div class="row">
-                                <div class="col-12 col-md-6 personalized-background">
-                                    <h3>Fazendo as coisas certas</h3>
+                                <div class="col-12 col-md-6 personalized-background mt-4 mt-md-0">
+                                    <h3 class="h3-responsive">Fazendo as coisas certas</h3>
                                     <p class="mt-3">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
                                 </div>
                                 <div class="col-12 col-md-6">&nbsp;</div>
@@ -115,14 +115,14 @@
                 <div class="col-4">
                     <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/happy-young-female-florist-with-flower-photo-album-shop.jpg'); ?>" alt="" class="form-control bg-transparent card-img-rectangular border-0 img-circle p-0">
                 </div>
-                <div class="col-8">                    
-                    <p class="mt-5 pt-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore esse cupiditate velit quaerat impedit, minima veniam laboriosam exercitationem ipsam voluptates voluptatem suscipit alias quibusdam modi officiis deleniti tempora? Natus, facere!"</p>
+                <div class="col-8">
+                    <p class="mt-1 mt-md-5 pt-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore esse cupiditate velit quaerat impedit, minima veniam laboriosam exercitationem ipsam voluptates voluptatem suscipit alias quibusdam modi officiis deleniti tempora? Natus, facere!"</p>
                     <h4 class="p-0">Betania Norton</h4>
                 </div>
             </section>
             <section class="row m-1 m-md-5">
                 <div class="col-8">
-                    <p class="mt-5 pt-5">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim, quis aspernatur doloremque impedit minus beatae dicta voluptatem amet fugit vitae, alias illum nesciunt quidem ea quisquam nostrum. Ipsa, deserunt."</p>
+                    <p class="mt-1 mt-md-5 pt-3">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim, quis aspernatur doloremque impedit minus beatae dicta voluptatem amet fugit vitae, alias illum nesciunt quidem ea quisquam nostrum. Ipsa, deserunt."</p>
                     <h4 class="p-0">Marry Kinney</h4>                    
                 </div>
                 <div class="col-4">
@@ -130,13 +130,13 @@
                 </div>
             </section>
             <section class="row m-1 mt-md-5 mx-md-5">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="position-relative">
                         <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/chair-garden.jpg'); ?>" alt="" class="form-control bg-transparent card-img-rectangular border-0 p-0">
                         <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
                             <div class="row">
                                 <div class="col-12 personalized-background">
-                                    <h3>Entre em contato</h3>
+                                    <h3 class="h3-responsive">Entre em contato</h3>
                                     <p class="mt-3">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@
         <footer class="container-fluid">
             <section class="row m-1 m-md-5 pt-5">
                 <div class="col-12 my-5 pt-5">&nbsp;</div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <ul class="list-unstyled">
                         <li>edifício Empire State</li>
                         <li>350 5th Ave, Nova York, NY 10118</li>
@@ -172,8 +172,8 @@
                         <li>contacts@esbnyc.com</li>
                     </ul>
                 </div>
-                <div class="col-4">&nbsp;</div>
-                <div class="col-4">
+                <div class="col-4 d-none d-sm-block">&nbsp;</div>
+                <div class="col-12 col-md-4">
                     <h4 class="p-0">Faça a Sua Jornada Floral</h4>
                     <p>Explore nossas incríveis seleções e encontre o arranjo perfeito para cada ocasião.</p>
                 </div>                
