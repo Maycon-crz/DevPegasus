@@ -25,12 +25,55 @@
             <section class="image-container">
                 <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/solar_panel/alternative-energy-ecological-concept.jpg'); ?>" alt="Imagem de uma floricultura com varias flores expostas" class="main_image">
                 <header class="top-info-container">
-                    <h1 class="overlay-text">Modelo de Site <br> Painel Solar</h1>
-                    <p>Oferecendo uma seleção fresca e diversificada de frutos do mar, nossa peixaria é o destino perfeito para os amantes de sabor marinho.</p>
+                    <h1 class="overlay-text">Um líder em energia solar</h1>
+                    <p>Produtos líderes do setor e atendimento ao cliente em todo o mundo, com um compromisso demonstrado com a sustentabilidade.</p>
                     <div class="text-center">
-                        <a href="#contato" title="" class="btn btn-outline-warning mt-3">Consulte Mais informações</a>
+                        <a href="#contato" title="" class="btn btn-outline-warning mt-3">CONTATE-NOS</a>
                     </div>
                 </header>
+            </section>
+            <div class="design-container"></div>
+            <section class="row m-1 m-md-5">
+                <div class="col-4">
+                    <h3>Por que Solar</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat.</p>
+                </div>
+                <div class="col-4">
+                    <h3>Como funciona</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat.</p>
+                </div>
+                <div class="col-4">
+                    <h3>Benefícios</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat.</p>
+                </div>
+            </section>
+            <section class="row m-1 m-md-5">
+                <div class="col-3">&nbsp;</div>
+                <div class="col-6">
+                    <h2 class="text-center">Liberdade de energia com energia solar e armazenamento</h2>
+                </div>
+                <div class="col-3">&nbsp;</div>
+            </section>
+            <section class="row m-1 m-md-5">
+                <div class="personalized-column">
+                    <div class="position-relative">
+                        <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/solar_panel/man-worker-firld-by-solar-panels.jpg'); ?>" alt="" class="form-control bg-transparent border-0 p-0">
+                        <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center row">
+                            <div class="col-3 border">
+                                111111111111111
+                            </div>
+                            <div class="col-3 border">
+                                222222222222222
+                            </div>
+                            <div class="col-3 border">
+                                333333333333333
+                            </div>
+                            <div class="col-3 border">
+                                444444444444444
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </body>

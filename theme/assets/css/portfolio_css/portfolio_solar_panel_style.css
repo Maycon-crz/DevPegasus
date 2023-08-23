@@ -23,15 +23,14 @@ body{
     max-width: 390px;
     top: 13%;
     left: 10%;
-    /* transform: translate(-50%, -50%); */
-    color: white;        
+    color: white;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     border-radius: 10px;
-    /**/
     opacity: 0; /* Começa com opacidade 0 para ficar invisível */
     transform: translateY(-50px); /* Deslocamento inicial para cima */
     animation: slideDown 1s ease-out forwards; /* Animação usando a função slideDown */   
+    z-index: 10;
 }
 .image-container > .top-info-container > h1{
     font-size: 3.6rem;
@@ -40,6 +39,12 @@ body{
     font-family: Bangers;
     font-weight: 400;
     letter-spacing: 4px;
+}
+
+.personalized-column{
+    position: relative;
+    width: 100%;
+    /* height: 900px; */
 }
 
 @keyframes slideDown {
@@ -53,14 +58,33 @@ body{
     }
 }
 
-/* .personalized-background{
-    background-color: rgba(0, 0, 0, 0.6);
+.design-container{
+    position: absolute;
+    width: 90%;
+    height: 369px;
+    max-width: 413px;
+    top: 26%;
+    left: 6%;
+    color: white;
+    background-color: rgba(249, 124, 55, 0.6);
+    padding: 10px 20px;
     border-radius: 10px;
-} */
+    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    transform: translateY(-50px); /* Deslocamento inicial para cima */
+    animation: slideDown 1s ease-out forwards; /* Animação usando a função slideDown */   
+}
+
+.section-servicos{
+    width: 100%;
+
+}
 
 @media only screen and (max-width: 768px) {
-    /* .image-container > .top-info-container{
-        
-    } */
+    .image-container > .top-info-container {
+        left: 0;
+    }
+    .design-container{
+        width: 80%;
+    }
 }
 

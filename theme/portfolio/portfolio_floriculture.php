@@ -59,7 +59,7 @@
             <section class="row m-1 m-md-5">
                 <div class="personalized-column">
                     <div class="position-relative">
-                        <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/florist-woman-making-fashion-modern-bouquet-different-flowers-wooden-background.jpg'); ?>" alt="" class="form-control bg-transparent card-img-rectangular border-0 p-0">
+                        <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/floriculture/florist-woman-making-fashion-modern-bouquet-different-flowers-wooden-background.jpg'); ?>" alt="" class="form-control bg-transparent border-0 p-0">
                         <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
                             <h4>Encontre a Beleza Natural</h4>
                         </div>

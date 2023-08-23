@@ -36,23 +36,23 @@
                 <div class="col-12">
                     <div class="position-relative mt-5">
                         <img src="<?= url('theme/assets/img/servico_de_desenvolvimento/portfolio_img/fish_shop/top-view-fish-slices-lemon.jpg'); ?>" alt="Imagem de uma floricultura com varias flores expostas" class="form-control p-0 border-0 rounded">
-                        <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center w-100 text-center row">
-                            <div class="col-12 col-md-3">
-                                <div class="m-3 personalized-background p-3">
+                        <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center w-100 text-center row m-0">
+                            <div class="col-4 p-3">
+                                <div class="personalized-background py-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icons-contact" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f03000}</style><path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
-                                    <h3 class="mt-5 mb-3">MATRIZ</h3>
+                                    <h3 class="h3-responsive">MATRIZ</h3>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <div class="m-3 personalized-background p-3">
+                            <div class="col-4 p-3">
+                                <div class="personalized-background py-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icons-contact" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f03000}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                                    <h3 class="mt-5 mb-3">TELEFONE</h3>
+                                    <h3 class="h3-responsive">TELEFONE</h3>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <div class="m-3 personalized-background p-3">
+                            <div class="col-4 p-3">
+                                <div class="personalized-background py-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icons-contact" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f03000}</style><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
-                                    <h3 class="mt-5 mb-3">E-MAIL</h3>
+                                    <h3 class="h3-responsive">E-MAIL</h3>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                 </div>                
             </section>
             <section class="row m-1 m-md-5">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <form action="https://api.whatsapp.com/send" method="get" target="_blank" class="mt-5">
                         <input type="hidden" name="phone" value="5547984369652">
                         <input type="hidden" name="text" value="Mensagem: Olá! Eu gostaria de um orçamento para desenvolvimento de um site institucional">
@@ -76,7 +76,7 @@
                         </button>
                     </form>
                 </div>
-                <div class="col-6 p-5">
+                <div class="col-12 col-md-6 p-5">
                     <h3 class="mt-5 pt-5">Entre em contato</h3>
                     <p class="mt-5"><strong>Explore o sabor do mar em cada mordida. Na nossa peixaria, estamos comprometidos em trazer a você os frutos do mar mais frescos e deliciosos.</strong></p>
                     <p class="mt-3">Das águas para o seu prato, cada escolha é uma experiência de sabor única. Nossa paixão pela qualidade e autenticidade nos diferencia, e mal podemos esperar para compartilhar essa delícia marinha com você.</p>                    
