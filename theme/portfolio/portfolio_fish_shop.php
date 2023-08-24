@@ -116,7 +116,7 @@
             </section>
             <section class="row">
                 <div class="col-12 bg-dark text-center mt-5 p-5">
-                    © <a href="<?= url(); ?>" title="Site DevPegasus" class="text-white">DevPegasus</a> - <a href="https://maycon-crz.github.io/" title="" class="text-white">Maycon Nascimento de Oliveira</a> - 2023
+                    © <a href="<?= url(); ?>" title="Site DevPegasus" class="text-white">DevPegasus</a> - 2023
                 </div>
             </section>
         </footer>
