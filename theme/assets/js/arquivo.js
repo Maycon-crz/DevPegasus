@@ -51,6 +51,7 @@ class AvisoDeCookies{
 	  }
 	}
 	fecharAvisoDeCookies(){
+		/*
 		var botaoFecharCookies = document.getElementById("botaoFecharCookies");
 		if(botaoFecharCookies){
 			botaoFecharCookies.addEventListener("click", function(){
@@ -59,6 +60,21 @@ class AvisoDeCookies{
 				document.cookie = "estadodoavisodecookie" + "=" + "fechado" + ";";
 			});
 		}
+		*/		
+		const botaoAceitarCookies = document.getElementById('botaoAceitarCookies');
+		const botaoRecusarCookies = document.getElementById('botaoRecusarCookies');
+
+		botaoAceitarCookies.addEventListener('click', () => {
+			document.getElementById("linhaAvisoDeCookies").style.display = "none";
+			let estadodoavisodecookie = "fechado";
+			document.cookie = "estadodoavisodecookie" + "=" + "fechado" + ";";
+		});
+		
+		botaoRecusarCookies.addEventListener('click', () => {
+			document.getElementById("linhaAvisoDeCookies").style.display = "none";
+			let estadodoavisodecookie = "fechado";
+			document.cookie = "estadodoavisodecookie" + "=" + "fechado" + ";";
+		});
 	}
 }
 class DataHoraAtual{

@@ -25,6 +25,7 @@
     background-color: rgba(12, 12, 20, 0.9);
 }
 
-.row_card_portfolios > div{
-    height: 100px;
+.row-project-templates > div > div > img{
+    height: 160px !important;
 }
+

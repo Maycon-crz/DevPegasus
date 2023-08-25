@@ -103,8 +103,13 @@
 		<?= $v->section("content"); ?>
 	</main>
   <div class="loadingGif"></div>
-  <section id='linhaAvisoDeCookies'>
+  <!-- <section id='linhaAvisoDeCookies'>
     <p>Navegando em Nosso Site você Automaticamente Concorda com a Utilização de cookies para oferecer uma melhor experiência de navegação, <a href="<?= url("politica"); ?>">Saiba mais.</a> <button tipe='button' id='botaoFecharCookies'>X</button></p>
+  </section> -->
+  <section id="linhaAvisoDeCookies">
+    <p>Navegando em Nosso Site você Automaticamente Concorda com a Utilização de cookies para oferecer uma melhor experiência de navegação, <a href="<?= url("politica"); ?>">Saiba mais.</a></p>
+    <button type="button" id="botaoAceitarCookies">Aceitar</button>
+    <button type="button" id="botaoRecusarCookies">Recusar</button>
   </section>
 	<footer class="container-flex text-center border mt-5">		
 		Todos os Direitos Reservados - <?= SITE; ?> - 2021
