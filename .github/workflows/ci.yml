@@ -3,7 +3,7 @@ name: Devpegasus.com CI
 on: 
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
