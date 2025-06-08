@@ -1,6 +1,6 @@
 <?php
 
-define("ROOT", "http://localhost/HOMOLOGACAO_WEB/DevPegasus");
+define("ROOT", "https://www.devpegasus.com");
 
 define("SITE", "DevPegasus");
 

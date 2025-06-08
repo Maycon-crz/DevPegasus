@@ -10,11 +10,9 @@
     
 	class GenericTools {
 	    public function filter($dados){
-			if ($dados !== null) {
-				$dados = trim($dados);
-				$dados = htmlspecialchars($dados);			
-				$dados = addslashes($dados);
-			}
+			$dados = trim($dados);
+			$dados = htmlspecialchars($dados);			
+			$dados = addslashes($dados);
 			return $dados;
 		}
 		public function checksImageTypeSize($image){

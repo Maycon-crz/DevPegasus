@@ -2,7 +2,7 @@
 
 <section class="row">
 	<div class="col-12">
-	  	<h1 class="text-center">Iniciar sessão</h1>
+	  	<h1 class="text-center">Iniciar sessao</h1>
         <form action="" method="" id="userLoginForm" class="col-12">
             <label class="" for="email">E-mail</label>
             <input type="email" name="email" id="email" class="form-control mb-3" required>

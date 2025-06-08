@@ -14,23 +14,21 @@ $router->namespace("source\Controllers");
  */
 $router->group(null);
 $router->get("/", "WebController:home");
+$router->get("/", "WebController:home");
 $router->get("/contato", "WebController:contact");
 $router->get("/sobre", "WebController:about");
 $router->get("/texto", "WebController:text");
-$router->get("/dicas_conhecimento", "WebController:tips_knowledge");/*Arrumar essa nome de função*/
-$router->get("/palheta_de_cores", "WebController:color_palette");/*Arrumar essa nome de função*/
+$router->get("/dicas_conhecimento", "WebController:tips_knowledge");
+$router->get("/palheta_de_cores", "WebController:color_palette");
 $router->get("/curriculum_generator", "WebController:curriculumGenerator");
 $router->post("/curriculum_render", "UserController:curriculumGeneratorController");
 $router->get("/servico_de_desenvolvimento", "WebController:developmentService");
 $router->get("/portfolio/{section}", "WebController:portfolio");
-
 $router->get("/politica", "WebController:politics");
-
 $router->get("/feed", "WebController:feed");
 
 $router->get("/login", "AuthenticationController:loginPageController");
 $router->get("/user", "UserController:dashboard");
-
 
 /**
  * LUANA IA
@@ -47,7 +45,7 @@ $router->post("/createsession", "AuthenticationController:createSession");
 $router->post("/login", "AuthenticationController:loginController");
 $router->post("/logout", "AuthenticationController:logoutController");
 $router->post("/post/{section}", "UserController:post");
-$router->post("/curriculum_generator", "UserController:curriculumGeneratorController");
+
 
 /**
  * ERROR

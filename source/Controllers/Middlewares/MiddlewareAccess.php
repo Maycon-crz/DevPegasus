@@ -53,7 +53,7 @@ abstract class MiddlewareAccess{
 						}
 					}
 				}
-			}			
+			}
 		} catch (Exception $e) {}		
 		header("Location: ".url());
 		exit();

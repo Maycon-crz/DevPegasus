@@ -51,17 +51,7 @@ class AvisoDeCookies{
 	  }
 	}
 	fecharAvisoDeCookies(){
-		/*
-		var botaoFecharCookies = document.getElementById("botaoFecharCookies");
-		if(botaoFecharCookies){
-			botaoFecharCookies.addEventListener("click", function(){
-				document.getElementById("linhaAvisoDeCookies").style.display = "none";
-				let estadodoavisodecookie = "fechado";
-				document.cookie = "estadodoavisodecookie" + "=" + "fechado" + ";";
-			});
-		}
-		*/		
-		const botaoAceitarCookies = document.getElementById('botaoAceitarCookies');
+        const botaoAceitarCookies = document.getElementById('botaoAceitarCookies');
 		const botaoRecusarCookies = document.getElementById('botaoRecusarCookies');
 
 		botaoAceitarCookies.addEventListener('click', () => {
