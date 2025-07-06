@@ -76,6 +76,7 @@
             ]);
         }
         function karaokeController(){
+            $this->luanaModel = new LuanaModel();
             echo $this->view->render("api", [
                 "dados" => $this->luanaModel->karaokeModel()
             ]);
