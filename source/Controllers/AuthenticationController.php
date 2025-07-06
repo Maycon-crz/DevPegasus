@@ -88,4 +88,7 @@ class AuthenticationController extends MiddlewareAccess{
 	public function recoversPasswordValidation(){}
 	public function changePassword(){}
 	public function completeRegistration(){}
+
+	/*LUANA IA*/
+	function luanaIAController(){}
 }
