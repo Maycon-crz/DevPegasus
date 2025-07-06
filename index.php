@@ -36,7 +36,7 @@ $router->get("/user", "UserController:dashboard");
 $router->group("/luana");
 $router->post("/login", "AuthenticationController:luanaIALogin");
 $router->get("/", "LuanaController:luanaIAController");
-$router->post("/api/karaoke", "LuanaController:karaokeController");
+$router->post("/api/karaoke", "LuanaController:karaokeRegisterMusicController");
 // LuanaController
 
 /**

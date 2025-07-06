@@ -75,10 +75,11 @@
                 "dados" => $this->response
             ]);
         }
-        function karaokeController(){
+        function karaokeRegisterMusicController(){
             $this->luanaModel = new LuanaModel();
+            $data = $_POST;
             echo $this->view->render("api", [
-                "dados" => $this->luanaModel->karaokeModel()
+                "dados" => $this->luanaModel->karaokeRegisterMusicModel($data)
             ]);
         }
     }
