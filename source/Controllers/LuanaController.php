@@ -8,6 +8,7 @@
     use Source\Models\Authentication\Services\AuthBO;
     use Source\Models\Lib\GenericTools;
     use Source\Models\UserOptions\Administrator\ContentGeneratorModel;
+    use Source\Models\Luana\LuanaModel;
 
     class LuanaController extends MiddlewareAccess{
         /*@var Engine*/
@@ -22,6 +23,7 @@
         private $subject;
         private $keywords;
         private $contentGeneratorModel;
+        private LuanaModel $luanaModel;
         public function __construct($router){
             $this->view = Engine::create(__DIR__."/../../theme", "php");
             $this->view->addData(["router" => $router]);
@@ -75,7 +77,7 @@
         }
         function karaokeController(){
             echo $this->view->render("api", [
-                "dados" => "Boora"
+                "dados" => $this->luanaModel->karaokeModel()
             ]);
         }
     }
