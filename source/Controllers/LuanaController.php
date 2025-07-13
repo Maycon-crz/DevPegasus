@@ -79,7 +79,7 @@
             $this->luanaModel = new LuanaModel();
             $data = $_POST;
             echo $this->view->render("api", [
-                "dados" => $this->luanaModel->karaokeRegisterMusicModel($data)
+                "dados" => $data
             ]);
         }
     }
