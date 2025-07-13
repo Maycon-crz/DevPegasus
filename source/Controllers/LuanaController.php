@@ -77,7 +77,11 @@
         }
         function karaokeRegisterMusicController(){
             $this->luanaModel = new LuanaModel();
-            $data = $_POST;
+            $jsonPayload = file_get_contents('php://input');
+            // Decodifica o JSON para um array associativo do PHP
+            // O segundo parâmetro "true" transforma o JSON em um array. Sem ele, viraria um objeto.
+            $data = json_decode($jsonPayload, true);
+
             echo $this->view->render("api", [
                 "dados" => $data
             ]);
